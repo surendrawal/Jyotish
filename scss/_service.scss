@@ -1,0 +1,379 @@
+.serv_intro,
+.plt_mhead,
+.hrs_head,
+.constell_head {
+  p {
+    color: #1a1818;
+    font-size: 1.3rem;
+    text-align: justify;
+    // font-weight: 400;
+  }
+}
+.height-limit {
+  ul,
+  p {
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+    height: 220px;
+    -webkit-line-clamp: 7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #1a1818;
+    font-size: 1.3rem;
+    // line-height: 1.6;
+  }
+}
+.all_detail_img {
+  border: 1px solid $color-black;
+  border-radius: 20px;
+  padding: 6px;
+  transition: 0.2s ease-in-out;
+  // height: 400px;
+  width: 550px;
+  img {
+    border-radius: 20px;
+  }
+  &:hover {
+    box-shadow: 0 0 10px 0 rgb(150, 148, 148);
+  }
+}
+.service-part {
+  .list {
+    list-style: disc;
+  }
+  h1 {
+    color: $color-pink;
+  }
+  .service_description {
+    p {
+      text-align: justify;
+      font-size: 1.3rem;
+    }
+  }
+  .box {
+    border: 4px solid rgb(32, 32, 32);
+    padding: 10px;
+    overflow: hidden;
+  }
+}
+.pla_img {
+  height: 350px;
+  img {
+    height: 100% !important;
+  }
+}
+@media (max-width: 450px) {
+  .about_tab {
+    h1 {
+      font-size: 1.7rem !important;
+      span {
+        font-size: 1.8rem !important;
+      }
+    }
+    h3 {
+      font-size: 1.2rem !important;
+    }
+  }
+  @media (max-width: 350px) {
+    .serv-part-head {
+      font-size: 1.9rem !important;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .serv-part-head {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .all-gotra {
+    tr {
+      th,
+      td {
+        font-size: 1rem !important;
+      }
+    }
+  }
+  .pla_img {
+    height: 300px;
+    img {
+      height: 100% !important;
+    }
+  }
+  .height-limit {
+    ul,
+    p {
+      font-size: 1.1rem !important;
+      height: 260px;
+    }
+  }
+  .serv_intro,
+  .plt_mhead,
+  .hrs_head,
+  .constell_head {
+    p {
+      color: #1a1818;
+      font-size: 1.1rem;
+      text-align: justify;
+      // font-weight: 400;
+    }
+  }
+  .planet-height ul {
+    height: 80px;
+    font-size: 1.1rem;
+    -webkit-line-clamp: 3;
+  }
+  .planet-height .para {
+    height: 50px;
+    -webkit-line-clamp: 2;
+    font-size: 1.1rem;
+  }
+  .service_description p,
+  .detail_paragraph {
+    font-size: 1.1rem !important;
+  }
+  .horo-detail,
+  .plan-detail {
+    ul {
+      li {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .all_detail_img {
+    width: 400px !important;
+    // height: 300px !important;
+  }
+  .pla_img {
+    width: 300px;
+    height: 300px;
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  .height-limit,
+  .planet-height {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 776px) {
+  .all_planet {
+    h1 {
+      font-size: 1.5rem !important;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .pla_img {
+    width: 100% !important;
+    height: 100% !important;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .all_planet {
+    h1 {
+      font-size: 1.1rem !important;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .pla_img {
+    height: 250px;
+    img {
+      height: 100%;
+    }
+  }
+  // .height-limit {
+  //   ul,
+  //   p {
+  //     height: 190px;
+  //     -webkit-line-clamp: 8;
+  //   }
+  // }
+  .all_horoscope,
+  .all_constellation,
+  .all_planet {
+    h1 {
+      font-size: 1.2rem !important;
+    }
+    .react {
+      span {
+        i {
+          font-size: 1.1rem !important;
+        }
+        position: relative;
+        &:before {
+          content: "";
+          width: 40px !important;
+          right: 25px;
+        }
+        &:after {
+          content: "";
+          width: 40px !important;
+          left: 25px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 370px) {
+  .related-cont {
+    h6,
+    p {
+      font-size: 0.75rem;
+    }
+  }
+  .service-part {
+    .serv-part-head {
+      font-size: 1.3rem !important;
+    }
+    .react {
+      span {
+        &:before {
+          content: "";
+          width: 30px;
+        }
+        &:after {
+          content: "";
+          width: 30px;
+        }
+      }
+    }
+  }
+  .all_horoscope,
+  .all_constellation {
+    h1 {
+      font-size: 1rem !important;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .height-limit {
+    p {
+      height: 190px;
+      -webkit-line-clamp: 6;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .height-limit {
+    p {
+      height: 160px;
+      -webkit-line-clamp: 5;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .height-limit {
+    p {
+      height: 160px;
+      -webkit-line-clamp: 6;
+    }
+  }
+}
+@media (max-width: 630px) {
+  .border_related {
+    .serv-cont {
+      h5,
+      p {
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 530px) {
+  .border_related {
+    .serv-cont {
+      h5,
+      p {
+        font-size: 0.75rem !important;
+      }
+    }
+  }
+}
+// banner
+.servanim {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/MagnificentJoyousEyra-size_restricted.gif) center/cover;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.serhead h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 900;
+}
+svg {
+  width: 50vw;
+  max-height: 25vh;
+  overflow: visible;
+}
+.eins {
+  transform-origin: 60px 60px;
+  transform: rotateZ(60deg);
+}
+.zwei {
+  transform-origin: 60px 60px;
+  transform: rotateZ(-60deg);
+}
+.all {
+  transform-origin: 60px 60px;
+  transform: scaleX(0.32);
+}
+.group {
+  animation: turnIt 2.5s linear infinite;
+  transform-origin: 60px 60px;
+  transform-box: content-box;
+}
+
+@keyframes turnIt {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.border_related {
+  border: 1px solid #063c5c;
+}
+.react {
+  span {
+    position: relative;
+    i {
+      font-size: 1.3rem;
+      color: #0c70aa;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 1px;
+      background-color: #0c70aa;
+      right: 35px;
+      top: 6px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 1px;
+      background-color: #0c70aa;
+      left: 35px;
+      top: 6px;
+    }
+  }
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/Icon1.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <!-- <link rel="stylesheet" href="css/nepalidate.css" /> -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Appointment</title>
+  <style>
+    .servicechoice ul li {
+      list-style: none;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px 0;
+    }
+
+    .modal {
+      z-index: 99999 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <section class="appointment">
+    <div class="container-xl py-5">
+      <div class="apnt-head text-center">
+        <h1>
+          Book An Appointment
+          <div class="diamond1"></div>
+          <div class="diamond2"></div>
+        </h1>
+      </div>
+      <div class="appointment-type text-center mt-5">
+        <a type="button" content="Choose Service" class="book-business" data-bs-toggle="modal"
+          data-bs-target="#gridSystemModal">
+        </a>
+        <!-- <div class="bottomBorder"></div> -->
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="gridSystemModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-center">
+                <h6>Select Service</h6>
+              </div>
+              <div class="modal-body servicechoice">
+                <ul class="py-4 pe-4 text-center d-flex flex-column gap-3">
+                  <li>
+                    <a href="prediction.html">Kundali Prediction</a>
+                  </li>
+                  <li>
+                    <a href="making.html">Kundali Making</a>
+                  </li>
+                  <li>
+                    <a href="milan.html">Kundali Milan</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal">
+                  close
+                </button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="fee_list py-5">
+    <div class="container-xl">
+      <div class="wel-head allhead text-center">
+        <h1>Fee List</h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><i class="fas fa-dollar-sign fs-4 fw-bold"></i></span>
+        </div>
+      </div>
+      <div class="row mt-2 gy-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="fee_box text-center">
+            <div class="offer">
+              <p>OFFER</p>
+            </div>
+            <div class="fee_img d-flex justify-content-center py-3">
+              <img src="img/Basic-1.svg" />
+            </div>
+            <div class="title">
+              <h5>Kundali Prediction</h5>
+              <h6 class="fw-bold">चिना हेर्ने</h6>
+            </div>
+            <div class="price py-4 text-light">
+              <h5>NRS.600</h5>
+              <h6>NRS <span>500 /</span>Kundali</h6>
+            </div>
+            <div class="py-5 d-flex flex-column gap-3">
+              <div class="tim">
+                <i class="far fa-clock"></i> <span>45 Minutes</span>
+              </div>
+              <div class="ask">
+                <i class="fas fa-question"></i> <span>Ask Your Queries</span>
+              </div>
+              <div class="sprt">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Online Support</span>
+              </div>
+            </div>
+            <div class="pay_now py-4">
+              <a href="#weaccept" class="btn btn-outline-dark rounded-pill px-4 py-2">Pay Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="fee_box text-center">
+            <div class="offer">
+              <p>OFFER</p>
+            </div>
+            <div class="fee_img d-flex justify-content-center py-3">
+              <img src="img/Advance-1 (1).svg" />
+            </div>
+            <div class="title">
+              <h5>Foreigner Kundali Prediction</h5>
+              <h6 class="fw-bold">चिना हेर्ने</h6>
+            </div>
+            <div class="price py-4 text-light">
+              <h5>NRS.2000</h5>
+              <h6>NRS <span>1000 /</span>Kundali</h6>
+            </div>
+            <div class="py-5 d-flex flex-column gap-3">
+              <div class="tim">
+                <i class="far fa-clock"></i> <span>45 Minutes</span>
+              </div>
+              <div class="ask">
+                <i class="fas fa-question"></i> <span>Ask Your Queries</span>
+              </div>
+              <div class="sprt">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Online Support</span>
+              </div>
+            </div>
+            <div class="pay_now py-4">
+              <a href="#weaccept" class="btn btn-outline-dark rounded-pill px-4 py-2">Pay Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="fee_box text-center">
+            <div class="offer">
+              <p>OFFER</p>
+            </div>
+            <div class="fee_img d-flex justify-content-center py-3">
+              <img src="img/Kundali-Making-1.svg" />
+            </div>
+            <div class="title">
+              <h5>Kundali Making (Paper)</h5>
+              <h6 class="fw-bold">चिना बनाउने</h6>
+            </div>
+            <div class="price py-4 text-light">
+              <h5>NRS.3000</h5>
+              <h6>NRS <span>2000 /</span>Kundali</h6>
+            </div>
+            <div class="py-5 d-flex flex-column gap-3">
+              <div class="tim">
+                <i class="far fa-clock"></i>
+                <span>Delivery After 48 to 72 Hours</span>
+              </div>
+              <div class="ask">
+                <i class="fas fa-book-open"></i>
+                <span>Details Kundali Making</span>
+              </div>
+              <div class="sprt">
+                <i class="fas fa-book"></i>
+                <span>Paper Format</span>
+              </div>
+            </div>
+            <div class="pay_now py-4">
+              <a href="#weaccept" class="btn btn-outline-dark rounded-pill px-4 py-2">Pay Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="fee_box text-center">
+            <div class="offer">
+              <p>OFFER</p>
+            </div>
+            <div class="fee_img d-flex justify-content-center py-3">
+              <img src="img/PDF-2.svg" />
+            </div>
+            <div class="title">
+              <h5>Kundali Making (PDF File)</h5>
+              <h6 class="fw-bold">चिना बनाउने</h6>
+            </div>
+            <div class="price py-4 text-light">
+              <h5>NRS.4000</h5>
+              <h6>NRS <span>3000 /</span>Kundali</h6>
+            </div>
+            <div class="py-5 d-flex flex-column gap-3">
+              <div class="tim">
+                <i class="far fa-clock"></i>
+                <span>Delivery Aftre 48 to 72 hours</span>
+              </div>
+              <div class="ask">
+                <i class="fas fa-question"></i>
+                <span>Details Kundali Making</span>
+              </div>
+              <div class="sprt">
+                <i class="fas fa-file-pdf"></i>
+                <span>PDF Format</span>
+              </div>
+            </div>
+            <div class="pay_now py-4">
+              <a href="#weaccept" class="btn btn-outline-dark rounded-pill px-4 py-2">Pay Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="weaccept bg-light py-5">
+    <div class="container-xl">
+      <div class="wel-head allhead text-center">
+        <h1>We Accept</h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><i class="fas fa-handshake fs-4 fw-bold"></i></span>
+        </div>
+      </div>
+      <div class="mt-2 row gy-3" id="weaccept">
+        <div class="col-md-6">
+          <div class="row gy-3 tab">
+            <div class="col-3">
+              <button class="tablinks" onmouseover="openPay(event, 'Global')">
+                <img src="img/Global-IME-Bank-New.jpg" class="w-100" />
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="tablinks" onmouseover="openPay(event, 'Mbank')">
+                <img src="img/Machhapuchchhre-Bank-Limited-New.jpg" class="w-100" />
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="tablinks" onmouseover="openPay(event, 'sbi')">
+                <img src="img/lgosbi-removebg-preview.png" class="w-100" />
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="tablinks" onmouseover="openPay(event, 'connectips')">
+                <img src="img/lgoconnect.png" class="w-100" />
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="tablinks" onmouseover="openPay(event, 'Esewa')">
+                <img src="img/Esewa-New.jpg" class="w-100" />
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="tablinks" onmouseover="openPay(event, 'Khalti')">
+                <img src="img/Khalti-New.jpg" class="w-100" />
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="tablinks" onmouseover="openPay(event, 'Ime')">
+                <img src="img/IME-New.jpg" class="w-100" />
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="tablinks" onmouseover="openPay(event, 'Western')">
+                <img src="img/Western-Union-New.jpg" class="w-100" />
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tabcontent" id="Global">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/globalqr.jpg" class="img-fluid" />
+              </div>
+              <div class="col-8">
+                <h2>Global IME Bank</h2>
+                <h5>A/C Number: <span>4007010006949</span></h5>
+                <h5>A/C Holder: <span>NABIN UPADHAYA</span></h5>
+                <h5>Bank Branch: <span>SATDOBATO</span></h5>
+                <h5>Swift Code: <span>GLBBNPKA</span></h5>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent" id="Mbank">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/machhaqr.jpg" class="img-fluid" />
+              </div>
+              <div class="col-8">
+                <h2>Machhapuchchhre Bank Ltd.</h2>
+                <h5>A/C Number: <span>0390077253700019</span></h5>
+                <h5>A/C Holder: <span>NABIN UPADHAYA</span></h5>
+                <h5>Bank Branch: <span>LAZIMPAT</span></h5>
+                <h5>Swift Code: <span>MBLNNPKA</span></h5>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent" id="Esewa">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/eSewaqr.jpg" class="img-fluid" />
+              </div>
+              <div class="col-8">
+                <h2>Esewa</h2>
+                <h5>Esewa ID: <span>9851150093</span></h5>
+                <h5>ID Holder: <span>NABIN UPADHAYA</span></h5>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent" id="Khalti">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/Khaltiqr.jpg" class="img-fluid" />
+              </div>
+              <div class="col-8">
+                <h2>Khalti</h2>
+                <h5>Esewa ID: <span>9851150093</span></h5>
+                <h5>ID Holder: <span>NABIN UPADHAYA</span></h5>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent" id="Ime">
+            <h2>IME</h2>
+            <h5>Mobile No: <span>9851150093</span></h5>
+            <h5>Name: <span>NABIN UPADHAYA</span></h5>
+            <h5>Address: <span>Kathmandu, Nepal</span></h5>
+          </div>
+          <div class="tabcontent" id="Western">
+            <h2>Western Union</h2>
+            <h5>Mobile No: <span>9851150093</span></h5>
+            <h5>Name: <span>NABIN UPADHAYA</span></h5>
+            <h5>Address: <span>Kathmandu, Nepal</span></h5>
+          </div>
+          <div class="tabcontent" id="sbi">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/sbiqr.jpg" class="img-fluid" />
+              </div>
+              <div class="col-8">
+                <h2>Nepal SBI Bank Ltd.</h2>
+                <h5>A/C Number: <span>17715241416695</span></h5>
+                <h5>A/C Holder: <span>NABIN UPADHAYA</span></h5>
+                <h5>Bank Branch: <span>DARBARMARG</span></h5>
+                <h5>Swift Code: <span>NSBINPKA</span></h5>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent" id="connectips">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/connectqr.jpg" class="img-fluid" />
+              </div>
+              <div class="col-8">
+                <h2>Connect IPS</h2>
+                <h5>Connect IPS ID: <span>9851150093</span></h5>
+                <h5>ID Holder: <span>NABIN UPADHAYA</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/paymethod.js"></script>
+  <script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+
+  </script>
+</body>
+
+</html>

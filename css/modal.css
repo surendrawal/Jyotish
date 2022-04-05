@@ -1,0 +1,50 @@
+.reveal-if-active {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.reveal-if-active label {
+  display: block;
+  margin: 0 0 3px 0;
+}
+
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  height: 100% !important;
+  padding: 10px 20px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  overflow: visible;
+}
+
+.time-range {
+  background: #5a028d;
+}
+
+.time-range p {
+  font-size: 0.8rem;
+}
+
+.select-height {
+  height: 200px;
+}
+
+@media (max-width: 330px) {
+  .gen-got {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=modal.css.map */

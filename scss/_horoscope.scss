@@ -1,0 +1,75 @@
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 40vh;
+  background: url(../img/hor.gif) center;
+  //   height: 300px;
+  h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 550px) {
+  .large-header {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
+.horo-detail,
+.plan-detail {
+  ul {
+    li {
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+  }
+}
+.all_detail_small_img {
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 10px 0 rgb(150, 148, 148);
+  }
+}
+@media (max-width: 576px) {
+  .all_detail_small_img {
+    width: 400px !important;
+  }
+}
+.owl-carousel {
+  .bg-white {
+    border-radius: 20px;
+  }
+}
+.owl-stage {
+  margin: 2px 0;
+}
+@media (min-width: 400px) and (max-width: 480px) {
+  .related_gem {
+    .box {
+      img {
+        width: 70px !important;
+        height: 70px !important;
+      }
+    }
+  }
+}
+@media (min-width: 570px) and (max-width: 615px) {
+  .related_gem {
+    .box {
+      img {
+        width: 70px !important;
+        height: 70px !important;
+      }
+    }
+  }
+}

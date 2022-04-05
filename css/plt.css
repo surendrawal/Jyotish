@@ -1,0 +1,140 @@
+.ss {
+  background: #121212;
+  overflow: hidden;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+.ss .planethead h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes chill {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes chill {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.twitter:hover a {
+  -webkit-transform: rotate(-45deg) scale(1.05);
+          transform: rotate(-45deg) scale(1.05);
+}
+
+.twitter:hover i {
+  color: #21c2ff;
+}
+
+.twitter a {
+  bottom: -40px;
+  right: -75px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.twitter i {
+  bottom: 7px;
+  right: 7px;
+  color: #00aced;
+}
+
+.social-icon a {
+  position: absolute;
+  background: white;
+  color: white;
+  -webkit-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+
+.social-icon i {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1000;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+
+.youtube:hover a {
+  -webkit-transform: rotate(45deg) scale(1.05);
+          transform: rotate(45deg) scale(1.05);
+}
+
+.youtube:hover i {
+  color: #ec4c44;
+}
+
+.youtube a {
+  bottom: -40px;
+  left: -75px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.youtube i {
+  bottom: 7px;
+  left: 7px;
+  color: #e62117;
+}
+/*# sourceMappingURL=plt.css.map */

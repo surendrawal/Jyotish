@@ -1,0 +1,213 @@
+.my-dimd {
+  background: url(../img/1037656268_1920x1080.jpg) center/cover;
+  height: 40vh;
+  position: relative;
+}
+
+.my-dimd h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.diamond-base {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: Rotation linear 2s infinite;
+          animation: Rotation linear 2s infinite;
+}
+
+.diamond {
+  width: 200px;
+  height: 200px;
+  margin: auto auto;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotateX(90deg) rotateZ(90deg);
+          transform: rotateX(90deg) rotateZ(90deg);
+}
+
+.diamond svg {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.diamond svg polygon {
+  stroke: white;
+  stroke-width: 3px;
+  fill: transparent;
+}
+
+.diamond svg.top {
+  -webkit-transform: translate(40px, 48px);
+          transform: translate(40px, 48px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.diamond .top-triangle {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 100px 100px;
+          transform-origin: 100px 100px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.diamond .top-triangle svg {
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+}
+
+.diamond .top-triangle-1 {
+  -webkit-transform: rotateZ(0deg) translate(70px, 152px);
+          transform: rotateZ(0deg) translate(70px, 152px);
+}
+
+.diamond .top-triangle-2 {
+  -webkit-transform: rotateZ(60deg) translate(70px, 152px);
+          transform: rotateZ(60deg) translate(70px, 152px);
+}
+
+.diamond .top-triangle-3 {
+  -webkit-transform: rotateZ(120deg) translate(70px, 152px);
+          transform: rotateZ(120deg) translate(70px, 152px);
+}
+
+.diamond .top-triangle-4 {
+  -webkit-transform: rotateZ(180deg) translate(70px, 152px);
+          transform: rotateZ(180deg) translate(70px, 152px);
+}
+
+.diamond .top-triangle-5 {
+  -webkit-transform: rotateZ(240deg) translate(70px, 152px);
+          transform: rotateZ(240deg) translate(70px, 152px);
+}
+
+.diamond .top-triangle-6 {
+  -webkit-transform: rotateZ(300deg) translate(70px, 152px);
+          transform: rotateZ(300deg) translate(70px, 152px);
+}
+
+.diamond .lower-part {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 100px 100px;
+          transform-origin: 100px 100px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.diamond .lower-part .triangles {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateZ(-30deg) translate3d(-14px, 51px, -48px);
+          transform: rotateZ(-30deg) translate3d(-14px, 51px, -48px);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  position: absolute;
+}
+
+.diamond .lower-part .triangles .up-triangle,
+.diamond .lower-part .triangles .down-triangle {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  position: absolute;
+}
+
+.diamond .lower-part .triangles .up-triangle {
+  -webkit-transform: rotateX(61.03deg);
+          transform: rotateX(61.03deg);
+}
+
+.diamond .lower-part .triangles .down-triangle {
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+}
+
+.diamond .lower-part-1 {
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+
+.diamond .lower-part-2 {
+  -webkit-transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
+}
+
+.diamond .lower-part-3 {
+  -webkit-transform: rotateZ(120deg);
+          transform: rotateZ(120deg);
+}
+
+.diamond .lower-part-4 {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.diamond .lower-part-5 {
+  -webkit-transform: rotateZ(240deg);
+          transform: rotateZ(240deg);
+}
+
+.diamond .lower-part-6 {
+  -webkit-transform: rotateZ(300deg);
+          transform: rotateZ(300deg);
+}
+
+@-webkit-keyframes Rotation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(120deg);
+            transform: rotateY(120deg);
+  }
+  100% {
+    -webkit-transform: rotateY(240deg);
+            transform: rotateY(240deg);
+  }
+}
+
+@keyframes Rotation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(120deg);
+            transform: rotateY(120deg);
+  }
+  100% {
+    -webkit-transform: rotateY(240deg);
+            transform: rotateY(240deg);
+  }
+}
+
+@media (max-width: 570px) {
+  .disnone {
+    display: none;
+  }
+}
+/*# sourceMappingURL=diamond.css.map */

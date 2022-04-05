@@ -1,0 +1,175 @@
+.slider_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .gem_img_box {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.about_tab {
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    span {
+      color: $color-red;
+    }
+  }
+  h3 {
+    color: $color-black;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+}
+.inner_slider_gem {
+  position: relative;
+  width: 550px;
+  margin: 0 auto;
+
+  .slider_img_box {
+    width: 59%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.description {
+  p {
+    color: #000;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.3rem;
+  }
+}
+.gemstone-detail {
+  .gem_title {
+    color: red;
+    font-size: 2rem;
+  }
+}
+.gem_tabs {
+  .box {
+    a {
+      color: $color-white;
+    }
+
+    border: 4px solid #535252;
+    h4 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .description {
+    p {
+      color: #000;
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+  }
+  .inner_slider_gem {
+    width: 400px;
+  }
+  .gemstone-detail {
+    .gem_title {
+      color: red;
+      font-size: 1.5rem;
+    }
+  }
+}
+@media (min-width: 576px) and(max-width: 730px) {
+  .inner_slider_gem {
+    width: 300px;
+    .slider_img_box {
+      top: 45px;
+    }
+  }
+
+  .gemstone-detail {
+    .gem_title {
+      color: red;
+      font-size: 1.3rem;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .gem_post_img {
+    width: 400px;
+  }
+  .inner_slider_gem {
+    .slider_img_box {
+      width: 260px;
+      top: 43px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .gemstone-detail {
+    .about_tab {
+      h1,
+      span {
+        font-size: 20px !important;
+      }
+    }
+  }
+}
+@media (min-width: 577px) and (max-width: 900px) {
+  .gemstone-detail {
+    .about_tab {
+      h1 {
+        font-size: 1.3rem;
+      }
+      h3 {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .gem_post_img {
+    width: 300px;
+  }
+  .slider_img_box {
+    width: 180px !important;
+  }
+  .inner_slider_gem {
+    width: 300px;
+  }
+  .gemstone-detail {
+    .gem_title {
+      color: red;
+      font-size: 1.2rem;
+    }
+  }
+}
+@media (max-width: 340px) {
+  .slider_img_box {
+    width: 60% !important;
+    top: 40px !important;
+  }
+  .inner_slider_gem {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .related_bg {
+    .gm-cont {
+      h4 {
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+}

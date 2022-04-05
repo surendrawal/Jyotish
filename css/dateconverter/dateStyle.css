@@ -1,0 +1,150 @@
+.dob_box {
+  height: 26px;
+  width: 190px;
+  border: 1px solid #222;
+  position: relative;
+}
+
+.dob_box > span {
+  display: block;
+  width: 12.5%;
+  float: left;
+  height: 100%;
+  line-height: 26px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  color: #495057;
+}
+
+.dob_box > span:not(:last-child):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 16px;
+  background: #222;
+}
+
+.dob_box > span:nth-child(2):after,
+.dob_box > span:nth-child(4):after {
+  height: 21px;
+}
+
+.dob_box > span:nth-child(1):before,
+.dob_box > span:nth-child(3):before,
+.dob_box > span:nth-child(6):before,
+.age_box > span:nth-child(5):before,
+.age_box1 > span:nth-child(5):before {
+  position: absolute;
+  bottom: -20px;
+  left: 100%;
+  transform: translateX(-50%);
+  font-size: 8px;
+  text-align: center;
+  color: #555;
+}
+
+.dob_box > span:nth-child(1):before {
+  content: "Day";
+}
+.dob_box > span:nth-child(3):before {
+  content: "Month";
+}
+.dob_box > span:nth-child(6):before {
+  content: "Year";
+}
+
+.age_box > span:nth-child(1):before {
+  content: "Year";
+}
+
+.age_box > span:nth-child(3):before {
+  content: "Month";
+}
+.age_box > span:nth-child(5):before {
+  content: "Day";
+}
+
+.age_box > span:nth-child(6):before {
+  display: none;
+}
+
+.age_box {
+  width: 150px;
+}
+.age_box > span {
+  width: 16.6666667%;
+}
+.age_box1 > span:nth-child(1):before {
+  content: "Year";
+}
+
+.age_box1 > span:nth-child(3):before {
+  content: "Month";
+}
+.age_box1 > span:nth-child(5):before {
+  content: "Day";
+}
+
+.age_box1 > span:nth-child(6):before {
+  display: none;
+}
+
+.age_box1 {
+  width: 150px;
+}
+.age_box1 > span {
+  width: 16.6666667%;
+}
+div#ndp-nepali-box td.ndp-date a {
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #063c5c;
+}
+.datepicker.datepicker-dropdown table tr {
+  border: 1px solid rgb(7, 37, 94);
+}
+.datepicker.datepicker-dropdown table td {
+  border: 1px solid rgb(7, 37, 94);
+  font-size: 18px;
+  padding: 4px 6px;
+}
+div#ndp-nepali-box td.ndp-selected {
+  background: #f55409;
+}
+div#ndp-nepali-box td.ndp-selected a {
+  color: #ffffff;
+  font-size: 18px;
+}
+div#ndp-nepali-box td.ndp-current {
+  background: #f55409;
+}
+div#ndp-nepali-box td.ndp-current a {
+  color: #ffffff;
+  font-size: 18px;
+}
+#currentMonth #npd-month-select,
+#currentMonth #npd-year-select {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 370px) {
+  div#ndp-nepali-box {
+    font-family: "Roboto", sans-serif !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  .datepicker.datepicker-dropdown {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+}

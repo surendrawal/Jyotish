@@ -1,0 +1,38 @@
+.reveal-if-active {
+  opacity: 0;
+  // max-height: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  transform: scale(0.8);
+  transition: 0.5s;
+
+  label {
+    display: block;
+    margin: 0 0 3px 0;
+  }
+
+  input[type="radio"]:checked ~ &,
+  input[type="checkbox"]:checked ~ & {
+    opacity: 1;
+    height: 100% !important;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
+  }
+}
+.time-range {
+  background: rgb(90, 2, 141);
+  p {
+    font-size: 0.8rem;
+  }
+}
+.select-height {
+  height: 200px;
+}
+@media (max-width: 330px) {
+  .gen-got {
+    display: flex;
+    flex-direction: column;
+  }
+}

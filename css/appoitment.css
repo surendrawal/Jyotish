@@ -1,0 +1,239 @@
+#msform {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#msform fieldset .form-card {
+  background: white;
+  border: 0 none;
+  border-radius: 0px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 0 3% 20px 3%;
+  position: relative;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform fieldset .form-card {
+  text-align: left;
+  color: rgb(37, 37, 37);
+}
+
+#msform input:focus {
+  box-shadow: none !important;
+}
+
+#msform .action-button {
+  /* width: 100px; */
+  background: rgb(13, 80, 107);
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px 5px;
+}
+
+#msform .action-button-previous {
+  /* width: 100px; */
+  background: #2b2a2a;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px 5px;
+}
+
+select.list-dt {
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 2px 5px 3px 5px;
+  margin: 2px;
+}
+
+select.list-dt:focus {
+  border-bottom: 2px solid skyblue;
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.fs-title {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#progressbar {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .aactive {
+  color: #000000;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 12px;
+  width: 19%;
+  float: left;
+  position: relative;
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f023";
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007";
+}
+
+#progressbar #date-time:before {
+  font-family: FontAwesome;
+  content: "\f007";
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f09d";
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+#progressbar li.aactive:before,
+#progressbar li.aactive:after {
+  background: skyblue;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal-dialog img {
+  position: relative !important;
+}
+
+@media (max-width: 600px) {
+  #progressbar li:before {
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+  }
+
+  #progressbar li:after {
+    content: "";
+    top: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .paymthod h6,
+  a {
+    font-size: 13px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 450px) {
+  #progressbar li {
+    font-size: 9px;
+  }
+}
+
+.servicechoice ul li {
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.mainContainer {
+  background: rgba(0, 0, 0, 0.8);
+  width: 220px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+}
+
+.act a {
+  color: red !important;
+  font-weight: bold;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  width: 220px;
+}
+.select2-container--default .select2-selection--single {
+  height: 36px;
+}
+.appointment input {
+  text-transform: capitalize;
+}
+.trasmform_date {
+  text-transform: lowercase !important;
+}

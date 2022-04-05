@@ -1,0 +1,232 @@
+.appointment {
+  background-color: $color-grey;
+  .apnt-head {
+    h1 {
+      position: relative;
+      font-family: "Playfair Display", Sans-serif;
+      // font-size: 5.5rem;
+      font-weight: 700;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 1px;
+        background-color: $color-black;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .diamond1 {
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        transform: translateX(-50%);
+        width: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent $color-black transparent;
+        display: flex;
+        justify-content: center;
+      }
+      .diamond2 {
+        position: absolute;
+        left: 50%;
+        bottom: -40px;
+        transform: translateX(-50%);
+        width: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: $color-black transparent transparent transparent;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    p {
+      text-align: justify;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: $color-pink-secondary;
+    }
+  }
+}
+.fee_list {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .fee_box {
+    border: 1px solid $color-black;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    .offer {
+      position: absolute;
+      background-color: $color-blue;
+      padding: 3px 40px;
+      font-size: 0.8rem;
+      height: 25px;
+      color: $color-white;
+      transform: rotate(-50deg);
+      left: -30px;
+      top: 25px;
+    }
+    .fee_img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .title {
+      margin-top: 130px;
+      h5 {
+        color: $color-red;
+      }
+    }
+    .price {
+      background-color: $color-black;
+      h5 {
+        color: rgb(168, 164, 164) !important;
+        text-decoration: line-through;
+      }
+      h6 {
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+    .pay_now {
+      background-color: $color-grey;
+    }
+  }
+}
+.weaccept {
+  .accpt_head {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #063c5c;
+    border-radius: 4px;
+    img {
+      transition: 0.3s ease-in-out;
+    }
+  }
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    box-shadow: 0 2px 6px #323536;
+    // border: none;
+    // img {
+    //   transform: translateY(2px);
+    // }
+  }
+  /* Style the tab content */
+  .tabcontent {
+    padding: 0px 12px;
+    display: none;
+    h2 {
+      color: $color-blue;
+      font-size: 1.5rem;
+    }
+    h5 {
+      font-size: 1.1rem;
+      span {
+        color: $color-red;
+      }
+    }
+  }
+}
+.rowww {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+//
+#fee-list1,
+#fee-list2,
+#fee-list11,
+#fee-list21 {
+  ul {
+    li {
+      list-style: disc;
+      span {
+        text-decoration: line-through;
+        color: rgb(87, 87, 87);
+      }
+    }
+  }
+}
+.form-check {
+  ul li {
+    list-style: disc;
+    span {
+      text-decoration: line-through;
+      color: rgb(87, 87, 87);
+    }
+  }
+}
+.personal-info-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.address-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.dob-time {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+.phoneAndGend {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  // gap: 10px;
+}
+@media (max-width: 992px) {
+  .dob-time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  // .address-grid{
+  //   display: grid;
+  // }
+}
+@media (max-width: 700px) {
+  .phoneAndGend {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 600px) {
+  .address-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 570px) {
+  .address-grid {
+    grid-template-columns: auto;
+  }
+  .phoneAndGend {
+    grid-template-columns: auto;
+  }
+  .personal-info-form,
+  .dob-time {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
