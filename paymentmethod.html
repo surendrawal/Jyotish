@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Kundali Milan</title>
+    <style>
+        .wrapper,
+        .wrapper1,
+        .wrapper2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            /* grid-template-columns: 1fr, 4fr; */
+        }
+
+        .buttonWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .allBtns {
+            /* letter-spacing: 3px; */
+            border: none;
+            height: 40px;
+            font-weight: 400;
+            line-height: 40px;
+            padding: 0 10px;
+            background-color: white;
+            color: #232c3d;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .allBtns:hover {
+            background-color: #d5e3ff;
+        }
+
+        .allBtns.activeP,
+        .allBtns.activeP2,
+        .allBtns.activeP1 {
+            background-color: #d5e3ff;
+
+        }
+
+        .activePC,
+        .activePC2,
+        .activePC1 {
+            background-color: white;
+
+        }
+
+        .contentP,
+        .contentP2,
+        .contentP1 {
+            display: none;
+        }
+
+        .contentP.activePC,
+        .contentP2.activePC2,
+        .contentP1.activePC1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-card">
+        <h2 class="fs-title">Payment Information</h2>
+        <div class="form-check d-flex align-items-center gap-2 ps-4">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked />
+            <label class="form-check-label text-dark fw-bold" for="flexRadioDefault4">
+                Cash Payment
+            </label>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="flush-headingPredictionOne">
+                    <div class="form-check d-flex align-items-center gap-2 ps-4">
+                        <input class="form-check-input fs-6" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault1" />
+                        <label for="flexRadioDefault1" class="border-0 bg-white fs-6 collapsed form-check-label"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePredictionOne"
+                            aria-expanded="false" aria-controls="flush-collapsePredictionOne">
+                            Digital Wallet
+                        </label>
+                    </div>
+                </h2>
+                <div id="flush-collapsePredictionOne" class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingPredictionOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="wrapper">
+                            <div class="buttonWrapper">
+                                <h5 class="allBtns tab-button activeP" data-id="home">eSewa</h5>
+                                <h5 class="allBtns tab-button" data-id="about">Khalti</h5>
+                                <h5 class="allBtns tab-button" data-id="contact">Connect
+                                    Ips</h5>
+                            </div>
+                            <div class="contentWrapper">
+                                <div class="contentP activePC" id="home">
+                                    <h6>eSewa ID:
+                                        <span>9851150093</span>
+                                    </h6>
+                                    <h6>
+                                        ID Holder:
+                                        <span>NABIN UPADHAYA
+                                        </span>
+                                    </h6>
+                                    <img src="img/eSewaqr.jpg" class="w-50 h-50" />
+                                </div>
+                                <div class="contentP" id="about">
+                                    <h6>
+                                        Khalti ID:
+                                        <span>9851150093</span>
+                                    </h6>
+                                    <h6>
+                                        ID Holder:
+                                        <span>NABIN UPADHAYA
+                                        </span>
+                                    </h6>
+                                    <img src="img/Khaltiqr.jpg" class="w-50 h-50" />
+                                </div>
+                                <div class="contentP" id="contact">
+                                    <h6>
+                                        Connect Ips ID:
+                                        <span>9851150093</span>
+                                    </h6>
+                                    <h6>
+                                        ID Holder:
+                                        <span>NABIN UPADHAYA
+                                        </span>
+                                    </h6>
+                                    <img src="img/connectqr.jpg" class="w-50 h-50" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="flush-headingPredictionTwo">
+                    <div class="form-check d-flex align-items-center gap-2 ps-4">
+                        <input class="form-check-input fs-6" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault2" />
+                        <label for="flexRadioDefault2" class="border-0 fs-6 bg-white collapsed form-check-label"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePredictionTwo"
+                            aria-expanded="false" aria-controls="flush-collapsePredictionTwo">
+                            Digital Banking
+                        </label>
+                    </div>
+                </h2>
+                <div id="flush-collapsePredictionTwo" class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingPredictionTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="wrapper1">
+                            <div class="buttonWrapper">
+                                <h6 class="allBtns tab-button1 activeP1" data-id="home1">Machhapuchhre
+                                    Bank</h6>
+                                <h6 class="allBtns tab-button1" data-id="about1">Global
+                                    IME Bank</h6>
+                                <h6 class="allBtns tab-button1" data-id="contact1">Nepal
+                                    SBI Bank</h6>
+                            </div>
+                            <div class="contentWrapper">
+                                <div class="contentP1 activePC1" id="home1">
+                                    <h6>
+                                        Bank Name:
+                                        <span>MACHHAPUCHCHHRE
+                                            BANK</span>
+                                    </h6>
+                                    <h6>
+                                        A/C Holder Name:
+                                        <span>NABIN UPADHAYA
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        Account Number:
+                                        <span>0390077253700019
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        Bank Branch:
+                                        <span> LAZIMPAT</span>
+                                    </h6>
+                                    <img src="img/machhaqr.jpg" class="w-50 h-50" />
+                                </div>
+                                <div class="contentP1" id="about1">
+                                    <h6>
+                                        Bank Name:
+                                        <span>Global IME
+                                            Bank</span>
+                                    </h6>
+                                    <h6>
+                                        A/C Holder Name:
+                                        <span>NABIN UPADHAYA
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        Account Number:
+                                        <span>4007010006949
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        Bank Branch:
+                                        <span> SATDOBATO</span>
+                                    </h6>
+                                    <img src="img/globalqr.jpg" class="w-50 h-50" />
+                                </div>
+                                <div class="contentP1" id="contact1">
+                                    <h6>
+                                        Bank Name:
+                                        <span>Nepal SBI Bank
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        A/C Holder Name:
+                                        <span>NABIN UPADHAYA
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        Account Number:
+                                        <span>17715241416695
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        Bank Branch:
+                                        <span> DARBARMARG</span>
+                                    </h6>
+                                    <img src="img/sbiqr.jpg" class="w-50 h-50" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingPredictionThree">
+                    <div class="form-check d-flex align-items-center gap-2 ps-4">
+                        <input class="form-check-input fs-6" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault3" />
+                        <label for="flexRadioDefault3" class="border-0 bg-white fs-6 collapsed form-check-label"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePredictionThree"
+                            aria-expanded="false" aria-controls="flush-collapsePredictionThree">
+                            Remittance
+                        </label>
+                    </div>
+                </h2>
+                <div id="flush-collapsePredictionThree" class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingPredictionThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="wrapper2">
+                            <div class="buttonWrapper">
+                                <h6 class="allBtns tab-button2 activeP2" data-id="home2">IME</h6>
+                                <h6 class="allBtns tab-button2" data-id="about2">Western Union</h6>
+
+                            </div>
+                            <div class="contentWrapper">
+                                <div class="contentP2 activePC2" id="home2">
+                                    <h6>
+                                        Monile Number:
+                                        <span>9851150093 </span>
+                                    </h6>
+                                    <h6>
+                                        Name:
+                                        <span>NABIN UPADHAYA
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        Address:
+                                        <span>Kathmandu</span>
+                                    </h6>
+                                </div>
+                                <div class="contentP2" id="about2">
+                                    <h6>
+                                        Monile Number:
+                                        <span>9851150093 </span>
+                                    </h6>
+                                    <h6>
+                                        Name:
+                                        <span>NABIN UPADHAYA
+                                        </span>
+                                    </h6>
+                                    <h6>
+                                        Address:
+                                        <span>Kathmandu</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 
+        const tabs = document.querySelector(".wrapper");
+        const tabButton = document.querySelectorAll(".tab-button");
+        const contents = document.querySelectorAll(".contentP");
+
+        tabs.onclick = e => {
+            const id = e.target.dataset.id;
+            if (id) {
+                tabButton.forEach(btn => {
+                    btn.classList.remove("activeP");
+                });
+                e.target.classList.add("activeP");
+
+                contents.forEach(content => {
+                    content.classList.remove("activePC");
+                });
+                const element = document.getElementById(id);
+                element.classList.add("activePC");
+            }
+        }
+        // mobile Banking
+        const tabs1 = document.querySelector(".wrapper1");
+        const tabButton1 = document.querySelectorAll(".tab-button1");
+        const contents1 = document.querySelectorAll(".contentP1");
+
+        tabs1.onclick = e1 => {
+            const id1 = e1.target.dataset.id;
+            if (id1) {
+                tabButton1.forEach(btn => {
+                    btn.classList.remove("activeP1");
+                });
+                e1.target.classList.add("activeP1");
+
+                contents1.forEach(content => {
+                    content.classList.remove("activePC1");
+                });
+                const element = document.getElementById(id1);
+                element.classList.add("activePC1");
+            }
+        }
+        // Remitance
+        const tabs2 = document.querySelector(".wrapper2");
+        const tabButton2 = document.querySelectorAll(".tab-button2");
+        const contents2 = document.querySelectorAll(".contentP2");
+
+        tabs2.onclick = e2 => {
+            const id2 = e2.target.dataset.id;
+            if (id2) {
+                tabButton2.forEach(btn2 => {
+                    btn2.classList.remove("activeP2");
+                });
+                e2.target.classList.add("activeP2");
+
+                contents2.forEach(content => {
+                    content.classList.remove("activePC2");
+                });
+                const element1 = document.getElementById(id2);
+                element1.classList.add("activePC2");
+            }
+        }
+    </script>
+</body>
+
+</html>

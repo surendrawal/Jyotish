@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Icon1.png" type="image/x-icon" />
+
+    <title>Jyotish Nepal</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="incheader"></div>
+    <div class="container-xl py-5">
+        <div class="section content-editor special-featured-news col-md-12 ">
+            <div class="text-center head_icon">
+                <h1 class="text-center">Unicode Converter</h1>
+                <div class="react">
+                    <span><i class="fas fa-pen"></i></span>
+                </div>
+            </div>
+        </div>
+        <div id="tabs" class="mt-5">
+            <ul class="nav d-flex gap-0">
+                <li id="show_preeti" class="">
+                    <a href="#preeti_to_unicode" class="unicode_link active unicode_item activeuni">
+                        प्रीती बाट युनिकोड
+                    </a>
+                </li>
+                <li id="show_unicode" class="">
+                    <a href="#unicode_to_preeti" class="unicode_link unicode_item">
+                        युनिकोड बाट प्रीती
+                    </a>
+                </li>
+                <li id="show_roman" class="">
+                    <a href="#roman_to_unicode" class="unicode_link unicode_item">
+                        रोमनाईज्ड नेपाली
+
+                    </a>
+                </li>
+            </ul>
+            <div class="main mt-4" id="preeti_to_unicode">
+                <form name="form" class="unicode-form">
+                    <div class="esn-textarea-wrapper">
+                        <div class="preeti-textarea-wrapper">
+                            <p class="instruction_text">प्रीतिमा लेख्नुहोस
+                            </p>
+                            <textarea style="font-family: preeti;" class="form-control unicode_form_height mt-2"
+                                placeholder="यहाँ टाइप गर्नुहोस्" id="legacy_text" cols="" name="TextToConvert"
+                                onkeyup="javascript:convert_to_unicode();" autocomplete="off"></textarea>
+                            <select id="text_or_html" style="display:none;">
+                                <option selected="selected">नतिजा</option>
+                            </select>
+                        </div>
+                        <div class="unicode-textarea-wrapper">
+                            <textarea id="unicode_text" class="form-control unicode_form_height mt-3"
+                                name="ConvertedText" placeholder="नतिजा"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="main mt-4" id="unicode_to_preeti">
+                <form name="form" class="unicode-form">
+                    <div class="esn-textarea-wrapper">
+                        <div class="unicode-textarea-wrapper">
+                            <p class="instruction_text">युनिकोडमा लेख्नुहोस
+                            </p>
+                            <textarea id="unicode_text_two" class="form-control unicode_form_height mt-2"
+                                name="TextToConvert" onkeyup="javascript:convert_to_Preeti();" autocomplete="off"
+                                placeholder="यहाँ टाइप गर्नुहोस्"></textarea>
+                        </div>
+                        <div class="preeti-textarea-wrapper">
+                            <textarea id="legacy_text_two" style="font-family: preeti; " name="ConvertedText"
+                                class="form-control unicode_form_height mt-3" placeholder="नतिजा"></textarea>
+                        </div>
+                    </div>
+                    <!-- .esn-textarea-wrapper -->
+                </form>
+            </div>
+            <div class="main mt-4" id="roman_to_unicode">
+                <form name="Form1" class="unicode-form">
+                    <div class="esn-textarea-wrapper">
+                        <div class="roman-textarea-wrapper">
+                            <p class="instruction_text">रोमन नेपालीमा लेख्नुहोस
+                            </p>
+                            <textarea name="asciiArchive" class="form-control unicode_form_height mt-2" id="roman_text"
+                                onkeyup="javascript:editArchive();" placeholder="यहाँ टाइप गर्नुहोस्"></textarea>
+                            <!-- <textarea name="asciiArchive" class="form-control unicode_form_height mt-2" id="roman_text"
+                                onkeyup="javascript:editArchive();" placeholder="hello"> </textarea> -->
+                            <textarea name="ascii" onblur="javascript:asciiBlur();" onclick="javascript:asciiClick();"
+                                onkeyup="javascript:beginConvert(event);" placeholder="यहाँ टाइप गर्नुहोस्"
+                                style="display:none;"></textarea>
+                        </div>
+                        <div class="roman-textarea-wrapper">
+                            <textarea style="font-family: preeti; " class="form-control unicode_form_height mt-3"
+                                name="unicodeArchive" placeholder="नतिजा"></textarea>
+                            <textarea id="unicode" name="unicode" style="display:none;"></textarea>
+                        </div>
+                    </div>
+                    <!-- .esn-textarea-wrapper -->
+                    <input checked="checked" name="smartConverter_"
+                        onclick="javascript:smartConverter(Form1.smartConverter_.checked);convert();"
+                        style="display:none;" type="checkbox">
+                    <div class="unnecessary_div" style="display:none;">
+                        <div class="esn-grid esn-grid-small" esn-grid="">
+                            <div>
+                                <input class="esn-button esn-button-secondary esn-width-1-1" name="clear"
+                                    onclick="javascript:clearInput();" type="button" value="Clear">
+                            </div>
+                            <div>
+                                <input class="esn-button esn-button-primary esn-width-1-1" disabled="disabled"
+                                    name="convertNow" onclick="javascript:convertArchive();"
+                                    title="If the text is too large, press this button to convert." type="button"
+                                    value="Convert Now">
+                            </div>
+                            <div>
+                                <input class="esn-button esn-button-primary esn-width-1-1" name="sAll"
+                                    onclick="javascript:selectAll(Form1.unicodeArchive);" style="margin-left: 5px;"
+                                    title="On Internet Explorer, it will perform the 'Copy' command, too. But not so on other browsers due to their limitations. For those, after selected, right click and select 'Copy' "
+                                    type="button" value="Select All">
+                            </div>
+                            <div>
+                                <select class="esn-select esn-width-1-1" name="htmlEncode"
+                                    onchange="javascript:toggleHTML();">
+                                    <option selected="selected" value="false">Readable Unicode</option>
+                                    <option value="true">HTML Encoded Unicode</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="incfooter"></div>
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://unicode.arthasarokar.com/public/js/site.js?ver=2.9.1" type="text/javascript"></script>
+    <script src="https://unicode.arthasarokar.com/public/js/preeti_to_unicode.js?ver=2.9.1"
+        type="text/javascript"></script>
+    <script src="https://unicode.arthasarokar.com/public/js/unicode_to_preeti.js?ver=2.9.1"
+        type="text/javascript"></script>
+    <script src="https://unicode.arthasarokar.com/public/js/i.js?ver=2.9.1" type="text/javascript"></script>
+    <script src="https://unicode.arthasarokar.com/public/js/j.js?ver=2.9.1" type="text/javascript"></script>
+    <script src="https://unicode.arthasarokar.com/public/js/k.js?ver=2.9.1" type="text/javascript"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs()
+        })
+        $(document).ready(function () {
+            $(".unicode_item").click(function () {
+                $(".unicode_item").removeClass("activeuni");
+                $(this).addClass("activeuni");
+            });
+        })
+        $("#incheader").load("header.html")
+        $("#incfooter").load("footer.html")
+    </script>
+</body>
+
+</html>

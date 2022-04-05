@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=6226176358f4c40013686447&product=sticky-share-buttons"
+    async="async"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Jyotish Nepal</title>
+</head>
+
+<body>
+  <div class="sharethis-sticky-share-buttons"></div>
+  <header>
+    <div class="container-xl text-center">
+      <ul class="d-flex justify-content-center gap-2 py-2 topbar">
+        <li class="border-end pe-2">
+          <a href="dateconverter.html">Date Converter</a>
+        </li>
+        <li class="border-end pe-2">
+          <a href="panchanga.html">Panchanga</a>
+        </li>
+        <li class="border-end pe-2">
+          <a href="nepalirashifal.html">Daily Horoscope</a>
+        </li>
+        <li class="border-end pe-2">
+          <a href="nepaliweather.html">Nepal Weather</a>
+        </li>
+        <li class="border-end pe-2">
+          <a href="upcommingevents.html">Upcoming Event</a>
+        </li>
+        <li class=""><a href="nepalicalander.html">Calendar</a></li>
+      </ul>
+      <div class="applogo">
+        <a href="index.html"><img src="img/logo.jpg" class="img-fluid" /></a>
+      </div>
+      <div class="row py-3 below_logo">
+        <div class="col-lg-5 mt-lg-2 mt-0">
+          <div class="d-flex flex-column flex-sm-row justify-content-center">
+            <div class="d-flex gap-2 justify-content-center align-items-center">
+              <div class="time d-none d-sm-block">
+                <i class="far fa-clock"></i>
+              </div>
+              <div class="frame">
+                <iframe scrolling="no" border="0" frameborder="0" marginwidth="0" marginheight="0"
+                  allowtransparency="true"
+                  src="https://www.ashesh.com.np/linknepali-time.php?time_only=yes&font_color=333333&aj_time=yes&font_size=14&api=6101z4l493"
+                  width="175px" height="22"></iframe>
+              </div>
+            </div>
+            <div class="d-flex gap-2 justify-content-center align-items-center">
+              <div class="time d-none d-sm-block">
+                <i class="far fa-calendar-alt"></i>
+              </div>
+              <div class="frame">
+                <iframe scrolling="no" border="0" frameborder="0" marginwidth="0" marginheight="0"
+                  allowtransparency="true"
+                  src="https://www.ashesh.com.np/linknepali-time.php?dwn=only&font_color=333333&font_size=14&bikram_sambat=0&format=dmyw&api=6101z4l470"
+                  width="160px" height="22"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 mt-3 mt-lg-0">
+          <div class="search__grid">
+            <div class="">
+              <div class="d-flex search__header">
+                <input type="search" class="form-control" placeholder="Search">
+                <button type="submit" class="btn btn-primary"><span
+                    class="d-flex gap-1 justify-content-center align-items-center"><i
+                      class="fas fa-search"></i>Search</span>
+                </button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="d-flex justify-content-center align-items-center gap-3">
+                <a href="unicode.html"
+                  class="home_unicode text-dark d-flex gap-1 justify-content-center align-items-center"><i
+                    class="far fa-keyboard"></i>
+                  Unicode</a>
+                <div class="login">
+                  <div id="loginContainer">
+                    <a href="#" id="loginButton"
+                      class="text-dark d-flex gap-1 justify-content-center align-items-center"><i
+                        class="fas fa-user-circle"></i>
+                      <span>Login</span></a>
+                    <div style="clear:both"></div>
+                    <div id="loginBox">
+                      <form id="loginForm">
+                        <fieldset id="body" class="text-center">
+                          <fieldset>
+                            <input type="text" name="email" id="email" placeholder="Username" class="form-control" />
+                          </fieldset>
+                          <fieldset>
+                            <input type="password" name="password" id="password" placeholder="Password"
+                              class="form-control" />
+                          </fieldset>
+                          <div class="d-flex justify-content-center">
+                            <button type="submit" id="login" value="Sign In"
+                              class="btn btn-outline-primary form-control w-50 text-white">Sign
+                              In</button>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <nav class="navbar navbar-expand-lg text-light p-0">
+      <div class="container-xl">
+        <!-- <button class="navbar-toggler py-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span><i class="fas fa-bars text-light"></i></span>
+        </button> -->
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar__item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="service.html"> Service </a>
+              <ul class="inner_nav">
+                <li>
+                  <a href="service_detail.html"><img src="img/astrology.png" width="20px" /> Kundali Prediction</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><i class="fas fa-book-open" width="20px"></i> Kundali Making</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><i class="fas fa-torah text-danger" width="20px"></i> Kundali Milan</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><i class="fas fa-gem text-light" width="20px"></i> Gemstone</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><img src="img/vastuservice.png" width="20px" /> Vastu
+                    Service</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><img
+                      src="https://img.icons8.com/external-becris-lineal-color-becris/20/000000/external-planet-earth-environment-becris-lineal-color-becris.png" />
+                    Yantra Service</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><img src="https://img.icons8.com/color/20/000000/planet.png" />
+                    Planetary Body</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><i class="fas fa-praying-hands text-success" width="20px"></i> Graha
+                    Shanti</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><i class="fas fa-quran text-warning" width="20px"></i> Muhurta
+                    Nirdharan</a>
+                </li>
+                <li>
+                  <a href="service_detail.html"><i class="fas fa-headset text-info" width="20px"></i> Online
+                    Service</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="gemstone.html"> Gemstone </a>
+              <ul class="inner_nav">
+                <li>
+                  <a href="gemstone_detail.html">
+                    <img src="https://img.icons8.com/color/20/000000/ruby.png" />
+                    Ruby</a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img src="https://img.icons8.com/color/20/000000/topaz.png" />
+                    Perl
+                  </a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img src="https://img.icons8.com/color/20/000000/crystal.png" />
+                    Coral</a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img src="https://img.icons8.com/color/20/000000/emerald.png" />
+                    Emerald</a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img
+                      src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-diamond-diamonds-icongeek26-flat-icongeek26-16.png" />
+                    Yellow Sapphire</a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img
+                      src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/20/000000/external-diamond-casino-icongeek26-outline-colour-icongeek26-1.png" />
+                    Diamond</a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img src="https://img.icons8.com/color/20/000000/opal.png" />
+                    Opal</a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img src="https://img.icons8.com/color/20/000000/sapphire.png" />
+                    Blue Sapphire</a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img
+                      src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-diamond-diamonds-icongeek26-flat-icongeek26-10.png" />
+                    Hessonite</a>
+                </li>
+                <li>
+                  <a href="gemstone_detail.html"><img
+                      src="https://img.icons8.com/external-prettycons-flat-prettycons/20/000000/external-eye-astrology-and-symbology-prettycons-flat-prettycons.png" />
+                    Cat's Eye</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="planet.html"> Planet </a>
+              <ul class="inner_nav">
+                <li>
+                  <a href="planet_detail.html"><img src="https://img.icons8.com/emoji/20/000000/sun-emoji.png" />
+                    Sun</a>
+                </li>
+                <li>
+                  <a href="moon.html"><img src="https://img.icons8.com/color/20/000000/star-crescent.png" />
+                    Moon</a>
+                </li>
+                <li>
+                  <a href="mars.html"><img
+                      src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/20/000000/external-mars-space-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png" />
+                    Mars</a>
+                </li>
+                <li>
+                  <a href="mercury.html"><img
+                      src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-mercury-space-icongeek26-flat-icongeek26.png" />
+                    Mercury</a>
+                </li>
+                <li>
+                  <a href="jupiter.html">
+                    <img
+                      src="https://img.icons8.com/external-tone-royyan-wijaya/20/000000/external-jupiter-space-duotone-tone-royyan-wijaya.png" />
+                    Jupiter</a>
+                </li>
+                <li>
+                  <a href="venus.html"><img
+                      src="https://img.icons8.com/external-tulpahn-flat-tulpahn/20/000000/external-venus-space-tulpahn-flat-tulpahn.png" />
+                    Venus</a>
+                </li>
+                <li>
+                  <a href="saturn.html"><img
+                      src="https://img.icons8.com/external-justicon-flat-justicon/20/000000/external-saturn-elearning-and-education-justicon-flat-justicon.png" />
+                    Saturn</a>
+                </li>
+                <li>
+                  <a href="rahu.html"><img
+                      src="https://img.icons8.com/external-color-for-better-life-royyan-wijaya/20/000000/external-mercury-space-lineal-color-color-for-better-life-royyan-wijaya.png" />
+                    Rahu</a>
+                </li>
+                <li>
+                  <a href="ketu.html">
+                    <img
+                      src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/20/000000/external-planet-protest-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png" />
+                    Ketu</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="horoscope.html"> Horoscope </a>
+              <ul class="inner_nav">
+                <li>
+                  <a href="horoscope_detail.html">
+
+                    <img
+                      src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-aries-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                    Aries</a>
+                </li>
+                <li>
+                  <a href="taurus.html">
+                    <img src="https://img.icons8.com/bubbles/20/000000/taurus.png" />
+                    Taurus</a>
+                </li>
+                <li>
+                  <a href="gemini.html">
+                    <img
+                      src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-gemini-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                    Gemini</a>
+                </li>
+                <li>
+                  <a href="cancer.html"><img
+                      src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-cancer-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                    Cancer</a>
+                </li>
+                <li>
+                  <a href="leo.html"><img
+                      src="https://img.icons8.com/external-prettycons-flat-prettycons/20/000000/external-leo-astrology-and-symbology-prettycons-flat-prettycons.png" />
+                    Leo</a>
+                </li>
+                <li>
+                  <a href="virgo.html">
+                    <img src="https://img.icons8.com/emoji/20/000000/virgo-emoji.png" />
+                    Virgo</a>
+                </li>
+                <li>
+                  <a href="libra.html"><img src="https://img.icons8.com/cute-clipart/20/000000/libra.png" />
+                    Libra</a>
+                </li>
+                <li>
+                  <a href="scorpio.html"><img src="https://img.icons8.com/bubbles/20/000000/scorpio.png" />Scorpio</a>
+                </li>
+                <li>
+                  <a href="sagitta.html"><img src="https://img.icons8.com/doodle/20/000000/archer.png" />
+                    Sagittarius</a>
+                </li>
+                <li>
+                  <a href="capricorn.html">
+                    <img
+                      src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-capricorn-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                    Capricorn</a>
+                </li>
+                <li>
+                  <a href="aquarious.html">
+                    <img
+                      src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-aquarius-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                    Aquarius</a>
+                </li>
+                <li>
+                  <a href="pisces.html"><img
+                      src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-pisces-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                    Pisces</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="constellation.html">
+                Constellation
+              </a>
+              <ul class="inner_nav">
+                <li>
+                  <a href="constellation_detail.html"><img src="img/const/ashwini-icon.png" width="25px" />
+                    Ashwini
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/bharani-icon.png" width="25px" />Bharani
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Krittika-icon.png" width="25px" />
+                    Krittika</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/rohini-icon.png" width="25px" />
+                    Rohini</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/mirighishara-icon.png" width="25px" />
+                    Mrigashirsha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/arudra-icon.png" width="25px" />
+                    Ardra</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Punarvasu-icon.png" width="25px" />
+                    Punarvasu
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Pushya-icon.png" width="25px" />
+                    Pushya</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Ashlesha-icon.png" width="25px" />
+                    Ashlesha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Magha-icon.png" width="25px" />
+                    Magha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Purva-Phalguni-icon.png" width="25px" />
+                    Purva Phalguni</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Uttara-Phalguni-icon.png" width="25px" />
+                    Uttara Phalguni</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Hasta-icon.png" width="25px" />
+                    Hasta</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Chitra-icon.png" width="25px" />
+                    Chitra</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Swati-icon.png" width="30px" />
+                    Swati</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Vishakha-icon.png" width="25px" />
+                    Vishakha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Anuradha-icon.png" width="25px" />
+                    Anuradha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Jyeshtha-icon.png" width="25px" />
+                    Jyeshtha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Mula-icon.png" width="25px" />
+                    Mula</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Purva-Ashadha-icon.png" width="25px" />
+                    Purva Ashadha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Uttara-Ashadha-icon.png" width="25px" />
+                    Uttara Ashadha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Shravana-icon.png" width="25px" />
+                    Shravana</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Dhanishtha-icon.png" width="25px" />
+                    Dhanishta</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Shatabhisha-icon.png" width="25px" />
+                    Shatabhisha</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Purva-Bhadrapada-icon.png" width="25px" />
+                    Purva Bhadrapada</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Uttara-Bhadrapada-icon.png" width="25px" />
+                    Uttara Bhadrapada</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/const/Revati-icon.png" width="25px" />
+                    Revati</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="dreams.html"> Dreams </a>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="mantra.html"> Mantra </a>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="gotra.html"> Gotra </a>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="about.html"> About </a>
+            </li>
+            <li class="navbar__item">
+              <a class="nav-link" href="contact.html"> Contact </a>
+            </li>
+
+          </ul>
+          <a href="appointment.html" class="btn btn-danger get-apont">Book Appointmment</a>
+          <!-- <div class="accordion accordion_sec accordin accordion-flush" id="accordionFlushExample ">
+            <div class="accordion-item">
+              <div class="accordion-header py-0" id="flush-headingOne">
+                <div class="d-flex justify-content-between my-bg-color py-0">
+                  <div class="hmb">
+                    <a href="service.html">Service</a>
+                  </div>
+                  <div class="border-start">
+                    <button class="accordion-button accordion-button-bg collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                      aria-controls="flush-collapseOne"></button>
+                  </div>
+                </div>
+              </div>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body accordion-bdy">
+                  <ul class="d-flex flex-column gap-3">
+                    <li>
+                      <a href="service_detail.html"><img src="img/astrology.png" width="20px" /> Kundali Prediction</a>
+                    </li>
+                    <li>
+                      <a href="service_detail.html"><i class="fas fa-book-open" width="20px"></i> Kundali Making</a>
+                    </li>
+                    <li>
+                      <a href="kundali_milan.html"><i class="fas fa-torah text-danger" width="20px"></i> Kundali
+                        Milan</a>
+                    </li>
+                    <li>
+                      <a href="online_service.html"><i class="fas fa-gem text-light" width="20px"></i> Gemstone</a>
+                    </li>
+                    <li>
+                      <a href="yantra.html"><img src="img/vastuservice.png" width="20px" /> Vastu
+                        Service</a>
+                    </li>
+                    <li>
+                      <a href="vastu.html"><img
+                          src="https://img.icons8.com/external-becris-lineal-color-becris/20/000000/external-planet-earth-environment-becris-lineal-color-becris.png" />
+                        Yantra Service</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="https://img.icons8.com/color/20/000000/planet.png" />
+                        Planetary Body</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-praying-hands text-success"></i> Graha
+                        Shanti</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-quran text-warning"></i> Muhurta
+                        Nirdharan</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-headset text-info"></i> Online
+                        Service</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" id="flush-headingTwo">
+                <div class="d-flex justify-content-between my-bg-color">
+                  <div class="hmb">
+                    <a href="gemstone.html">Gemstone</a>
+                  </div>
+                  <div class="border-start">
+                    <button class="accordion-button accordion-button-bg collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                      aria-controls="flush-collapseTwo"></button>
+                  </div>
+                </div>
+              </div>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body accordion-bdy">
+                  <ul class="d-flex flex-column gap-3">
+
+                    <li>
+                      <a href="gemstone_detail.html">
+                        <img src="https://img.icons8.com/color/20/000000/ruby.png" />
+                        Ruby</a>
+                    </li>
+                    <li>
+                      <a href="gemstone_detail.html"><img src="https://img.icons8.com/color/20/000000/topaz.png" />
+                        Perl
+                      </a>
+                    </li>
+                    <li>
+                      <a href="coral.html"><img src="https://img.icons8.com/color/20/000000/crystal.png" />
+                        Coral</a>
+                    </li>
+                    <li>
+                      <a href="emerald.html"><img src="https://img.icons8.com/color/20/000000/emerald.png" />
+                        Emerald</a>
+                    </li>
+                    <li>
+                      <a href="#"><img
+                          src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-diamond-diamonds-icongeek26-flat-icongeek26-16.png" />
+                        Yellow Sapphire</a>
+                    </li>
+                    <li>
+                      <a href="#"><img
+                          src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/20/000000/external-diamond-casino-icongeek26-outline-colour-icongeek26-1.png" />
+                        Diamond</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="https://img.icons8.com/color/20/000000/opal.png" />
+                        Opal</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="https://img.icons8.com/color/20/000000/sapphire.png" />
+                        Blue Sapphire</a>
+                    </li>
+                    <li>
+                      <a href="#"><img
+                          src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-diamond-diamonds-icongeek26-flat-icongeek26-10.png" />
+                        Hessonite</a>
+                    </li>
+                    <li>
+                      <a href="#"><img
+                          src="https://img.icons8.com/external-prettycons-flat-prettycons/20/000000/external-eye-astrology-and-symbology-prettycons-flat-prettycons.png" />
+                        Cat's Eye</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" id="flush-headingThree">
+                <div class="d-flex justify-content-between my-bg-color">
+                  <div class="hmb">
+                    <a href="planet.html">Planet</a>
+                  </div>
+                  <div class="border-start">
+                    <button class="accordion-button accordion-button-bg collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                      aria-controls="flush-collapseThree"></button>
+                  </div>
+                </div>
+              </div>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body accordion-bdy">
+                  <ul class="d-flex flex-column gap-3">
+
+                    <li>
+                      <a href="planet_detail.html"><img src="https://img.icons8.com/emoji/20/000000/sun-emoji.png" />
+                        Sun</a>
+                    </li>
+                    <li>
+                      <a href="planet_detail.html"><img
+                          src="https://img.icons8.com/color/20/000000/star-crescent.png" />
+                        Moon</a>
+                    </li>
+                    <li>
+                      <a href="mars.html"><img
+                          src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/20/000000/external-mars-space-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png" />
+                        Mars</a>
+                    </li>
+                    <li>
+                      <a href="mercury.html"><img
+                          src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-mercury-space-icongeek26-flat-icongeek26.png" />
+                        Mercury</a>
+                    </li>
+                    <li>
+                      <a href="jupiter.html">
+                        <img
+                          src="https://img.icons8.com/external-tone-royyan-wijaya/20/000000/external-jupiter-space-duotone-tone-royyan-wijaya.png" />
+                        Jupiter</a>
+                    </li>
+                    <li>
+                      <a href="venus.html"><img
+                          src="https://img.icons8.com/external-tulpahn-flat-tulpahn/20/000000/external-venus-space-tulpahn-flat-tulpahn.png" />
+                        Venus</a>
+                    </li>
+                    <li>
+                      <a href="saturn.html"><img
+                          src="https://img.icons8.com/external-justicon-flat-justicon/20/000000/external-saturn-elearning-and-education-justicon-flat-justicon.png" />
+                        Saturn</a>
+                    </li>
+                    <li>
+                      <a href="rahu.html"><img
+                          src="https://img.icons8.com/external-color-for-better-life-royyan-wijaya/20/000000/external-mercury-space-lineal-color-color-for-better-life-royyan-wijaya.png" />
+                        Rahu</a>
+                    </li>
+                    <li>
+                      <a href="ketu.html">
+                        <img
+                          src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/20/000000/external-planet-protest-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png" />
+                        Ketu</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" id="flush-headingFour">
+                <div class="d-flex justify-content-between my-bg-color">
+                  <div class="hmb">
+                    <a href="horoscope.html">Horoscope</a>
+                  </div>
+                  <div class="border-start">
+                    <button class="accordion-button accordion-button-bg collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                      aria-controls="flush-collapseFour"></button>
+                  </div>
+                </div>
+              </div>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body accordion-bdy">
+                  <ul class="d-flex flex-column gap-3">
+
+                    <li>
+                      <a href="horoscope_detail.html">
+
+                        <img
+                          src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-aries-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                        Aries</a>
+                    </li>
+                    <li>
+                      <a href="horoscope_detail.html">
+                        <img src="https://img.icons8.com/bubbles/20/000000/taurus.png" />
+                        Taurus</a>
+                    </li>
+                    <li>
+                      <a href="gemini.html">
+                        <img
+                          src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-gemini-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                        Gemini</a>
+                    </li>
+                    <li>
+                      <a href="cancer.html"><img
+                          src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-cancer-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                        Cancer</a>
+                    </li>
+                    <li>
+                      <a href="leo.html"><img
+                          src="https://img.icons8.com/external-prettycons-flat-prettycons/20/000000/external-leo-astrology-and-symbology-prettycons-flat-prettycons.png" />
+                        Leo</a>
+                    </li>
+                    <li>
+                      <a href="virgo.html">
+                        <img src="https://img.icons8.com/emoji/20/000000/virgo-emoji.png" />
+                        Virgo</a>
+                    </li>
+                    <li>
+                      <a href="libra.html"><img src="https://img.icons8.com/cute-clipart/20/000000/libra.png" />
+                        Libra</a>
+                    </li>
+                    <li>
+                      <a href="scorpio.html"><img
+                          src="https://img.icons8.com/bubbles/20/000000/scorpio.png" />Scorpio</a>
+                    </li>
+                    <li>
+                      <a href="sagitta.html"><img src="https://img.icons8.com/doodle/20/000000/archer.png" />
+                        Sagittarius</a>
+                    </li>
+                    <li>
+                      <a href="capricorn.html">
+                        <img
+                          src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-capricorn-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                        Capricorn</a>
+                    </li>
+                    <li>
+                      <a href="aquarious.html">
+                        <img
+                          src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-aquarius-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                        Aquarius</a>
+                    </li>
+                    <li>
+                      <a href="pisces.html"><img
+                          src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-pisces-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                        Pisces</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" id="flush-headingFive">
+                <div class="d-flex justify-content-between my-bg-color">
+                  <div class="hmb">
+                    <a href="constellation.html">Constellation</a>
+                  </div>
+                  <div class="border-start">
+                    <button class="accordion-button accordion-button-bg collapsed " type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                      aria-controls="flush-collapseFive"></button>
+                  </div>
+                </div>
+              </div>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body accordion-bdy">
+                  <ul class="d-flex flex-column gap-3">
+                    <li>
+                      <a href="constellation_detail.html"><img src="img/const/ashwini-icon.png" width="25px" />
+                        Ashwini
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/bharani-icon.png" width="25px" />Bharani
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Krittika-icon.png" width="25px" />
+                        Krittika</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/rohini-icon.png" width="25px" />
+                        Rohini</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/mirighishara-icon.png" width="25px" />
+                        Mrigashirsha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/arudra-icon.png" width="25px" />
+                        Ardra</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Punarvasu-icon.png" width="25px" />
+                        Punarvasu
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Pushya-icon.png" width="25px" />
+                        Pushya</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Ashlesha-icon.png" width="25px" />
+                        Ashlesha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Magha-icon.png" width="25px" />
+                        Magha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Purva-Phalguni-icon.png" width="25px" />
+                        Purva Phalguni</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Uttara-Phalguni-icon.png" width="25px" />
+                        Uttara Phalguni</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Hasta-icon.png" width="25px" />
+                        Hasta</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Chitra-icon.png" width="25px" />
+                        Chitra</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Swati-icon.png" width="30px" />
+                        Swati</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Vishakha-icon.png" width="25px" />
+                        Vishakha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Anuradha-icon.png" width="25px" />
+                        Anuradha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Jyeshtha-icon.png" width="25px" />
+                        Jyeshtha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Mula-icon.png" width="25px" />
+                        Mula</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Purva-Ashadha-icon.png" width="25px" />
+                        Purva Ashadha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Uttara-Ashadha-icon.png" width="25px" />
+                        Uttara Ashadha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Shravana-icon.png" width="25px" />
+                        Shravana</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Dhanishtha-icon.png" width="25px" />
+                        Dhanishta</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Shatabhisha-icon.png" width="25px" />
+                        Shatabhisha</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Purva-Bhadrapada-icon.png" width="25px" />
+                        Purva Bhadrapada</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Uttara-Bhadrapada-icon.png" width="25px" />
+                        Uttara Bhadrapada</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/const/Revati-icon.png" width="25px" />
+                        Revati</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header my-bg-color hpy-2" id="flush-headingSix">
+                <a href="dreams.html"> Dreams </a>
+              </div>
+
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header my-bg-color hpy-2" id="flush-headingSeven">
+                <a href="mantra.html"> Mantra </a>
+              </div>
+              </h2>
+
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header my-bg-color hpy-2" id="flush-headingEight">
+                <a href="gotra.html"> Gotra </a>
+              </div>
+
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header my-bg-color hpy-2" id="flush-headingNine">
+                <a href="about.html"> About </a>
+              </div>
+
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header my-bg-color hpy-2" id="flush-headingTen">
+                <a href="contact.html"> Contact </a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+    </nav>
+    <div class="position_fixedTop">
+      <div class="myaccordion accordion-flush py-2 px-3" id="accordionFlushExample">
+        <div class="d-flex justify-content-between">
+          <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div><a href="appointment.html" class="btn btn-danger get-apont">Book Appointmment</a></div>
+        </div>
+        <div class="mobile_nav accordion_sec accordin">
+          <div class="accordion-item">
+            <div class="accordion-header py-0" id="flush-headingOne">
+              <div class="d-flex justify-content-between my-bg-color py-0">
+                <div class="hmb">
+                  <a href="service.html">Service</a>
+                </div>
+                <div class="border-start">
+                  <button class="accordion-button accordion-button-bg collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne"></button>
+                </div>
+              </div>
+            </div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body accordion-bdy">
+                <ul class="d-flex flex-column">
+                  <li>
+                    <a href="service_detail.html"><img src="img/astrology.png" width="20px" /> Kundali
+                      Prediction</a>
+                  </li>
+                  <li>
+                    <a href="service_detail.html"><i class="fas fa-book-open" width="20px"></i> Kundali
+                      Making</a>
+                  </li>
+                  <li>
+                    <a href="kundali_milan.html"><i class="fas fa-torah text-danger" width="20px"></i>
+                      Kundali
+                      Milan</a>
+                  </li>
+                  <li>
+                    <a href="online_service.html"><i class="fas fa-gem text-light" width="20px"></i>
+                      Gemstone</a>
+                  </li>
+                  <li>
+                    <a href="yantra.html"><img src="img/vastuservice.png" width="20px" /> Vastu
+                      Service</a>
+                  </li>
+                  <li>
+                    <a href="vastu.html"><img
+                        src="https://img.icons8.com/external-becris-lineal-color-becris/20/000000/external-planet-earth-environment-becris-lineal-color-becris.png" />
+                      Yantra Service</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="https://img.icons8.com/color/20/000000/planet.png" />
+                      Planetary Body</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-praying-hands text-success"></i> Graha
+                      Shanti</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-quran text-warning"></i> Muhurta
+                      Nirdharan</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-headset text-info"></i> Online
+                      Service</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" id="flush-headingTwo">
+              <div class="d-flex justify-content-between my-bg-color">
+                <div class="hmb">
+                  <a href="gemstone.html">Gemstone</a>
+                </div>
+                <div class="border-start">
+                  <button class="accordion-button accordion-button-bg collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                    aria-controls="flush-collapseTwo"></button>
+                </div>
+              </div>
+            </div>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body accordion-bdy">
+                <ul class="d-flex flex-column">
+
+                  <li>
+                    <a href="gemstone_detail.html">
+                      <img src="https://img.icons8.com/color/20/000000/ruby.png" />
+                      Ruby</a>
+                  </li>
+                  <li>
+                    <a href="gemstone_detail.html"><img src="https://img.icons8.com/color/20/000000/topaz.png" />
+                      Perl
+                    </a>
+                  </li>
+                  <li>
+                    <a href="coral.html"><img src="https://img.icons8.com/color/20/000000/crystal.png" />
+                      Coral</a>
+                  </li>
+                  <li>
+                    <a href="emerald.html"><img src="https://img.icons8.com/color/20/000000/emerald.png" />
+                      Emerald</a>
+                  </li>
+                  <li>
+                    <a href="#"><img
+                        src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-diamond-diamonds-icongeek26-flat-icongeek26-16.png" />
+                      Yellow Sapphire</a>
+                  </li>
+                  <li>
+                    <a href="#"><img
+                        src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/20/000000/external-diamond-casino-icongeek26-outline-colour-icongeek26-1.png" />
+                      Diamond</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="https://img.icons8.com/color/20/000000/opal.png" />
+                      Opal</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="https://img.icons8.com/color/20/000000/sapphire.png" />
+                      Blue Sapphire</a>
+                  </li>
+                  <li>
+                    <a href="#"><img
+                        src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-diamond-diamonds-icongeek26-flat-icongeek26-10.png" />
+                      Hessonite</a>
+                  </li>
+                  <li>
+                    <a href="#"><img
+                        src="https://img.icons8.com/external-prettycons-flat-prettycons/20/000000/external-eye-astrology-and-symbology-prettycons-flat-prettycons.png" />
+                      Cat's Eye</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" id="flush-headingThree">
+              <div class="d-flex justify-content-between my-bg-color">
+                <div class="hmb">
+                  <a href="planet.html">Planet</a>
+                </div>
+                <div class="border-start">
+                  <button class="accordion-button accordion-button-bg collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                    aria-controls="flush-collapseThree"></button>
+                </div>
+              </div>
+            </div>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body accordion-bdy">
+                <ul class="d-flex flex-column">
+
+                  <li>
+                    <a href="planet_detail.html"><img src="https://img.icons8.com/emoji/20/000000/sun-emoji.png" />
+                      Sun</a>
+                  </li>
+                  <li>
+                    <a href="planet_detail.html"><img src="https://img.icons8.com/color/20/000000/star-crescent.png" />
+                      Moon</a>
+                  </li>
+                  <li>
+                    <a href="mars.html"><img
+                        src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/20/000000/external-mars-space-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png" />
+                      Mars</a>
+                  </li>
+                  <li>
+                    <a href="mercury.html"><img
+                        src="https://img.icons8.com/external-icongeek26-flat-icongeek26/20/000000/external-mercury-space-icongeek26-flat-icongeek26.png" />
+                      Mercury</a>
+                  </li>
+                  <li>
+                    <a href="jupiter.html">
+                      <img
+                        src="https://img.icons8.com/external-tone-royyan-wijaya/20/000000/external-jupiter-space-duotone-tone-royyan-wijaya.png" />
+                      Jupiter</a>
+                  </li>
+                  <li>
+                    <a href="venus.html"><img
+                        src="https://img.icons8.com/external-tulpahn-flat-tulpahn/20/000000/external-venus-space-tulpahn-flat-tulpahn.png" />
+                      Venus</a>
+                  </li>
+                  <li>
+                    <a href="saturn.html"><img
+                        src="https://img.icons8.com/external-justicon-flat-justicon/20/000000/external-saturn-elearning-and-education-justicon-flat-justicon.png" />
+                      Saturn</a>
+                  </li>
+                  <li>
+                    <a href="rahu.html"><img
+                        src="https://img.icons8.com/external-color-for-better-life-royyan-wijaya/20/000000/external-mercury-space-lineal-color-color-for-better-life-royyan-wijaya.png" />
+                      Rahu</a>
+                  </li>
+                  <li>
+                    <a href="ketu.html">
+                      <img
+                        src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/20/000000/external-planet-protest-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png" />
+                      Ketu</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" id="flush-headingFour">
+              <div class="d-flex justify-content-between my-bg-color">
+                <div class="hmb">
+                  <a href="horoscope.html">Horoscope</a>
+                </div>
+                <div class="border-start">
+                  <button class="accordion-button accordion-button-bg collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                    aria-controls="flush-collapseFour"></button>
+                </div>
+              </div>
+            </div>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body accordion-bdy">
+                <ul class="d-flex flex-column">
+
+                  <li>
+                    <a href="horoscope_detail.html">
+
+                      <img
+                        src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-aries-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                      Aries</a>
+                  </li>
+                  <li>
+                    <a href="horoscope_detail.html">
+                      <img src="https://img.icons8.com/bubbles/20/000000/taurus.png" />
+                      Taurus</a>
+                  </li>
+                  <li>
+                    <a href="gemini.html">
+                      <img
+                        src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-gemini-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                      Gemini</a>
+                  </li>
+                  <li>
+                    <a href="cancer.html"><img
+                        src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-cancer-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                      Cancer</a>
+                  </li>
+                  <li>
+                    <a href="leo.html"><img
+                        src="https://img.icons8.com/external-prettycons-flat-prettycons/20/000000/external-leo-astrology-and-symbology-prettycons-flat-prettycons.png" />
+                      Leo</a>
+                  </li>
+                  <li>
+                    <a href="virgo.html">
+                      <img src="https://img.icons8.com/emoji/20/000000/virgo-emoji.png" />
+                      Virgo</a>
+                  </li>
+                  <li>
+                    <a href="libra.html"><img src="https://img.icons8.com/cute-clipart/20/000000/libra.png" />
+                      Libra</a>
+                  </li>
+                  <li>
+                    <a href="scorpio.html"><img src="https://img.icons8.com/bubbles/20/000000/scorpio.png" />Scorpio</a>
+                  </li>
+                  <li>
+                    <a href="sagitta.html"><img src="https://img.icons8.com/doodle/20/000000/archer.png" />
+                      Sagittarius</a>
+                  </li>
+                  <li>
+                    <a href="capricorn.html">
+                      <img
+                        src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-capricorn-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                      Capricorn</a>
+                  </li>
+                  <li>
+                    <a href="aquarious.html">
+                      <img
+                        src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-aquarius-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                      Aquarius</a>
+                  </li>
+                  <li>
+                    <a href="pisces.html"><img
+                        src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/20/000000/external-pisces-astrology-and-symbology-prettycons-lineal-color-prettycons.png" />
+                      Pisces</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" id="flush-headingFive">
+              <div class="d-flex justify-content-between my-bg-color">
+                <div class="hmb">
+                  <a href="constellation.html">Constellation</a>
+                </div>
+                <div class="border-start">
+                  <button class="accordion-button accordion-button-bg collapsed " type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                    aria-controls="flush-collapseFive"></button>
+                </div>
+              </div>
+            </div>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body accordion-bdy">
+                <ul class="d-flex flex-column">
+                  <li>
+                    <a href="constellation_detail.html"><img src="img/const/ashwini-icon.png" width="25px" />
+                      Ashwini
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/bharani-icon.png" width="25px" />Bharani
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Krittika-icon.png" width="25px" />
+                      Krittika</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/rohini-icon.png" width="25px" />
+                      Rohini</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/mirighishara-icon.png" width="25px" />
+                      Mrigashirsha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/arudra-icon.png" width="25px" />
+                      Ardra</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Punarvasu-icon.png" width="25px" />
+                      Punarvasu
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Pushya-icon.png" width="25px" />
+                      Pushya</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Ashlesha-icon.png" width="25px" />
+                      Ashlesha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Magha-icon.png" width="25px" />
+                      Magha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Purva-Phalguni-icon.png" width="25px" />
+                      Purva Phalguni</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Uttara-Phalguni-icon.png" width="25px" />
+                      Uttara Phalguni</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Hasta-icon.png" width="25px" />
+                      Hasta</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Chitra-icon.png" width="25px" />
+                      Chitra</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Swati-icon.png" width="30px" />
+                      Swati</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Vishakha-icon.png" width="25px" />
+                      Vishakha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Anuradha-icon.png" width="25px" />
+                      Anuradha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Jyeshtha-icon.png" width="25px" />
+                      Jyeshtha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Mula-icon.png" width="25px" />
+                      Mula</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Purva-Ashadha-icon.png" width="25px" />
+                      Purva Ashadha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Uttara-Ashadha-icon.png" width="25px" />
+                      Uttara Ashadha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Shravana-icon.png" width="25px" />
+                      Shravana</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Dhanishtha-icon.png" width="25px" />
+                      Dhanishta</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Shatabhisha-icon.png" width="25px" />
+                      Shatabhisha</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Purva-Bhadrapada-icon.png" width="25px" />
+                      Purva Bhadrapada</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Uttara-Bhadrapada-icon.png" width="25px" />
+                      Uttara Bhadrapada</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/const/Revati-icon.png" width="25px" />
+                      Revati</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header my-bg-color hpy-2" id="flush-headingSix">
+              <a href="dreams.html"> Dreams </a>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header my-bg-color hpy-2" id="flush-headingSeven">
+              <a href="mantra.html"> Mantra </a>
+            </div>
+            </h2>
+
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header my-bg-color hpy-2" id="flush-headingEight">
+              <a href="gotra.html"> Gotra </a>
+            </div>
+
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header my-bg-color hpy-2" id="flush-headingNine">
+              <a href="about.html"> About </a>
+            </div>
+
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header my-bg-color hpy-2" id="flush-headingTen">
+              <a href="contact.html"> Contact </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="mylink">
+    <div class="connect-us d-flex">
+      <h6 class="bg-primary"> Connect with us
+      </h6>
+      <div class="call-number pt-1">
+        <p>+977-9851150093
+          <br>+977-9813540330
+        </p>
+      </div>
+      <div class="d-flex flex-column gap-4 social-number">
+        <div>
+          <a href="https://www.facebook.com/loknetrajyotishsewa1"><img src="img/986944_facebook_icon.svg"
+              width="25px" /></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/loknetrajyotishsewa/"><img
+              src="img/4102579_applications_instagram_media_social_icon.svg" width="25px" /></a>
+        </div>
+        <div>
+          <a href="https://wa.me/+9779851150093"><img
+              src="img/1783351_chatting_messages_social media_whatsapp_internet_icon.svg" width="25px" /></a>
+        </div>
+        <div>
+          <a href="viber://chat?number=9779851150093"><img src="img/386738_viber_call_phone_icon.svg" width="25px"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    $('.navbar__item .nav-link').filter(function () {
+      return this.href == location.href;
+    }).addClass('active_nav');
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 270) {
+          $(".navbar").addClass("nav-head");
+          $(".position_fixedTop").addClass("nav-head");
+
+        } else {
+          $(".navbar").removeClass("nav-head");
+          $(".position_fixedTop").removeClass("nav-head");
+          // document.getElementById('pp').innerHTML="<img src='img/logo.png' width='110'>"
+
+        }
+      });
+    });
+    $(".mylink").click(function () {
+      if ($(".mylink").hasClass('show-connect')) {
+        $(".mylink").removeClass('show-connect')
+          ;
+      } else {
+        $(".mylink").addClass('show-connect');
+
+      }
+    });
+    $(".mylink").click(function () {
+      if ($(".connect-us").hasClass('connect-us1')) {
+        $(".connect-us").removeClass('connect-us1')
+          ;
+      } else {
+        $(".connect-us").addClass('connect-us1');
+      }
+    })
+    // Login Form
+
+    $(function () {
+      var button = $('#loginButton');
+      var box = $('#loginBox');
+      var form = $('#loginForm');
+      button.removeAttr('href');
+      button.mouseup(function (login) {
+        box.toggle();
+        button.toggleClass('active');
+      });
+      form.mouseup(function () {
+        return false;
+      });
+      $(this).mouseup(function (login) {
+        if (!($(login.target).parent('#loginButton').length > 0)) {
+          button.removeClass('active');
+          box.hide();
+        }
+      });
+    });
+
+    const menu = document.querySelector("#mobile-menu");
+    const menuLiks = document.querySelector(".mobile_nav");
+    const mobileMenu = () => {
+      menu.classList.toggle("is-active");
+      menuLiks.classList.toggle("active");
+    };
+    menu.addEventListener("click", mobileMenu);
+  </script>
+</body>
+
+</html>

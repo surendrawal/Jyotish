@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/Icon1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Nepali Weather</title>
+  <style>
+    .nepali__weather {
+      height: 690px !important;
+      width: 100%;
+    }
+
+    @media(max-width:600px) {
+      .nepali__weather {
+        height: 620px !important;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  <section class="container-xl py-4 text-center">
+    <h1>Nepali Weather</h1>
+    <div class="diamond_icon header-icon text-center text-dark">
+      <span><img src="https://img.icons8.com/office/25/000000/partly-cloudy-night--v1.png" /></span>
+    </div>
+    <div class="mt-4">
+      <iframe
+        src="https://www.ashesh.com.np/weather/widget.php?title=Nepal Weather Observation&header_color=00a2e2&api=132124m546"
+        frameborder="0" scrolling="no" marginwidth="0" marginheight="0"
+        style="border:none; overflow:hidden; border-radius:5px;" allowtransparency="true" class="nepali__weather">
+      </iframe>
+    </div>
+  </section>
+  <div id="footer"></div>
+  <script src="js/jquery.js"></script>
+  <script>
+    $.get("header.html", function (response) {
+      $("#header").html(response);
+    });
+    $.get("footer.html", function (response) {
+      $("#footer").html(response);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/Icon1.png" type="image/x-icon" />
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Jyotish Nepal</title>
+  <style>
+    .onload_container {
+      display: none;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      opacity: 0.9;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 40000;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      animation-name: fadeIn_Container;
+      animation-duration: 1s;
+      /* scroll-behavior: ; */
+      overflow: hidden;
+    }
+
+    .my_home_large_ads {
+      display: none;
+      top: 0;
+      /* min-width: 250px; */
+      width: 70%;
+      /* margin: 0 auto; */
+      position: fixed;
+      z-index: 999999;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #000;
+      left: 50%;
+      top: 50%;
+      overflow: hidden;
+      transform: translate(-50%, -50%);
+      /* margin-left: 15%; */
+      animation-name: fadeIn_Modal;
+      animation-duration: 0.8s;
+
+    }
+
+    .cancel_header {
+      right: 0;
+      top: 0px;
+      position: absolute;
+      border-radius: 10px 10px 0px 0px;
+      /* border-bottom: 2px solid #ccc; */
+    }
+
+    .cancel_header button {
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2px 10px;
+      border-radius: 50%;
+      border: none;
+    }
+
+    .modal__img {
+      width: 100%;
+    }
+
+    .modal__img img {
+      border-radius: 10px;
+    }
+
+    @keyframes fadeIn_Modal {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn_Container {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0.9;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="my_popup_ads_model">
+    <div class="onload_container" id="a">
+    </div>
+    <div class="my_home_large_ads" id="b">
+      <div class="cancel_header">
+        <button class="cancel">X</button>
+      </div>
+      <div class="modal__img">
+        <img src="img/Email.jpg" alt="" class="img-fluid h-100">
+      </div>
+    </div>
+  </div>
+  <div class="subscribe">
+    <div class="sub-popup p-4 bg-light">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="img/Icon111.png" class="w-100">
+        </div>
+        <div class="col-sm-8">
+          <p>Subscribe to our notifications for the latest news and updates. You can disable anytime</p>
+          <div class="d-flex justify-content-end align-items-end gap-3">
+            <button class="text-primary border-0 bg-light later-close">Later</button>
+            <button class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header"></div>
+  <section class="notice d-flex">
+    <div class="n-title">Notice</div>
+    <div class="marquee">
+      <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quae nam corrupti eos, ex provident
+      </span>
+    </div>
+    <!-- <div class="anim">
+      <a href="#">
+        <p>
+          Lorem ipsum dolor sit amet consectetur
+        </p>
+      </a>
+    </div> -->
+  </section>
+  <!-- <div id="planetslider"></div> -->
+  <article class="zoom-large opening">
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <div id="solar-system" class="earth">
+          <div id="mercury" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="venus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="earth" class="orbit">
+            <div class="pos">
+              <div class="orbit">
+                <div class="pos">
+                  <div class="moon"></div>
+                </div>
+              </div>
+              <div class="planet">
+                <dl class="infos">
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="mars" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="jupiter" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <div class="ring"></div>
+                <dl class="infos">
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="uranus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="neptune" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="sun">
+            <dl class="infos">
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <section class="astrologer py-4">
+    <div class="container-xl text-center">
+      <div class="">
+        <h1 class="text-uppercase">ASTROLOGER</h1>
+        <h5><span>Astrologer is Just An Advisor, Not A Magician</span></h5>
+        <div class="typing_text_wrapper d-flex justify-content-center">
+          <div data-text class="typing__content"></div>
+          <span class="tipingTextItem">Look into Future</span>
+          <span class="tipingTextItem">Work Accordingly</span>
+          <span class="tipingTextItem">Believe in it</span>
+        </div>
+      </div>
+  </section>
+  <section class="ads-banner">
+    <div class="d-none d-md-block">
+      <div class="row gx-0">
+        <div class="col-md-4 col-lg-3">
+          <div class="couponcode border border-danger px-2">
+            <div class="row text-light border-bottom">
+              <div class="col-6 coupon-left d-flex align-items-center
+                justify-content-center flex-column">
+                <div class="text-light  ">
+                  <h4 class="text-uppercase">Save</h4>
+                  <h2><span>111</span>Nrs</h2>
+                  <h6 class="text-uppercase">On Your Next Order</h6>
+                </div>
+              </div>
+              <div class="col-6 coupon-right d-flex flex-column pt-4 align-items-center">
+                <p class="text-uppercase text-dark fw-bold">Your Promo Code</p>
+                <h4 class="border-primary border rounded text-primary py-2 px-2">GIFTCODE</h4>
+                <p>Kundali Prediction</p>
+                <p>Making & Milan</p>
+              </div>
+            </div>
+            <p class="p-2 coupon-code-msg">Dashain Offers
+            </p>
+            <!-- <hr> -->
+            <!-- <div class="card">
+                      <div class="card-body">
+                       
+                      </div>
+                    </div> -->
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 large_home_banner">
+          <div class="owl-carousel owl-theme home_ads_banner">
+            <div class="item">
+              <img src="img/Horoscope for you.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/astro.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="carouselExampleControls" class="carousel slide  large-slider w-100" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Horoscope for you.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/astro.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+
+      </div>
+    </div>
+    <div class="d-md-none d-block large_home_banner">
+      <div class="owl-carousel owl-theme mobile_ads_slider">
+        <div class="item">
+          <img src="img/Horoscope for you.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="item">
+          <img src="img/astro.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <div class="coupon-code d-md-none border border-danger mt-0">
+      <div class="row text-light border-bottom">
+        <div class="col-6 coupon-left  d-flex  flex-column justify-content-center align-items-center">
+          <div class="text-light">
+            <h4 class="text-uppercase">Save</h6>
+              <h2><span>111</span>Nrs</h2>
+              <h6 class="text-uppercase">On Your Next order</h6>
+          </div>
+        </div>
+        <div class="col-6 coupon-right d-flex flex-column justify-content-center align-items-center py-2">
+          <p class="text-uppercase text-dark fw-bold">Your Promo Code</p>
+          <h6 class="border-primary border rounded text-primary py-2 px-2">GIFTCODE</h6>
+          <p class="text-center">Kundali Prediction, Making & Milan
+          </p>
+        </div>
+      </div>
+      <p class="p-2 coupon-code-msg">Dashain Offers
+      </p>
+    </div>
+  </section>
+  <section class="welcome py-5">
+    <div class="container-xl text-center">
+      <div class="wel-head allhead" data-aos="flip-up">
+        <h1>Welcome</h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><i class="fas fa-handshake fs-4 fw-bold"></i></span>
+        </div>
+      </div>
+      <p class="pt-4 fs-5" data-aos="fade-up">
+        Many times, you want to evaluate your options, or you are in need of
+        direction for the future. Whether you’re reconsidering your career
+        choices, your love life, or your holiday destinations, I can help you
+        choose the best route. Welcome to LOKNETRA JYOTISH SEWA, an unique
+        Astrologer in Kathmandu Nepal. Take a look around, explore my site,
+        and see what I can do for you.
+      </p>
+    </div>
+  </section>
+  <section class="offer-time py-4" id="offtime">
+    <div class="container-xl ">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="row text-light g-0">
+            <div class="col-sm-3 d-flex align-items-center justify-content-center">
+              <h5>Special Offer</h5>
+            </div>
+            <div class="col-sm-9 d-flex gap-3 align-items-center flex-sm-row flex-column">
+              <h6>Ending in</h6>
+              <div id="clockdiv">
+                <div>
+                  <span class="days"></span>
+                  <div class="smalltext">Days</div>
+                </div>
+                <div>
+                  <span class="hours"></span>
+                  <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                  <span class="minutes"></span>
+                  <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                  <span class="seconds"></span>
+                  <div class="smalltext">Seconds</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 text-light">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusantium distinctio eius nihil, sapiente
+            doloribus soluta id, neque repudiandae eos, quas amet sunt omnis similique quos deserunt doloremque illum
+            repellendus?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="service py-5">
+    <div class="container-xl text-center">
+      <div class="serv-head allhead">
+        <h1>Our Service</h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><i class="fas fa-hands-helping fs-4 fw-bold"></i></span>
+        </div>
+        <p>
+          <span class="mt-3 fs-5 index_para px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore
+            labore repudiandae deserunt, consequuntur, tempora eligendi consectetur minus distinctio beatae adipisci
+            temporibus ipsa hic exercitationem incidunt? Nobis molestiae non porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ducimus quod nemo distinctio obcaecati
+            excepturi quisquam a fuga! Soluta, minus. Autem nobis earum nisi quidem consequatur obcaecati odio
+            perferendis? Eum!
+          </span>
+          <a href="service_detail.html">Read More</a>
+        </p>
+      </div>
+      <div class="gap-3 mt-2 serv_grid " data-aos="fade-up">
+        <div class="box border">
+          <img src="img/Kundali-Prediction.jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>Kundali Prediction</h5>
+            <p class="clip_line">
+              Welcome to LOKNETRA JYOTISH SEWA, an unique Astrologer in
+              Kathmandu
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Kundali-Making (1).jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>Kundali making</h5>
+            <p class="clip_line">
+              Your kundali or birth diagram is the apparently little archive
+              that...
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Kundali-Milan.jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>Kundali milan</h5>
+            <p class="clip_line">
+              Welcome to LOKNETRA JYOTISH SEWA, an unique Astrologer in
+              Kathmandu
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Stone-Service-1 (1).jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>gemstone</h5>
+            <p class="clip_line">
+              Gemstones can ward off negative influence of malefic planets
+              and...
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Vastu-Service-1 (1).jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>vastu service</h5>
+            <p class="clip_line">
+              Welcome to LOKNETRA JYOTISH SEWA, an unique Astrologer in
+              Kathmandu
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Yantra-Service-1.jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>Yantra service</h5>
+            <p class="clip_line">
+              A Yantra is characterized as a supernatural outline, coming from
+              the...
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Planet.jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>Planetary body</h5>
+            <p class="clip_line">
+              Nine planetary bodies in our nearby planetary group each have a
+              ʺPersonalityʺ...
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Graha-Shanti-1.jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>Graha shanti</h5>
+            <p class="clip_line">
+              Welcome to LOKNETRA JYOTISH SEWA, an unique Astrologer in
+              Kathmandu
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Muhurta-Nirdharan-1.jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>MUHURTA NIRDHARAN</h5>
+            <p class="clip_line">
+              Gemstones can ward off negative influence of malefic planets
+              and...
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+        <div class="box border">
+          <img src="img/Online-Service-1.jpg" class="w-100" />
+          <div class="serv-cont mt-4">
+            <h5>online service</h5>
+            <p class="clip_line">
+              We talk to you live and online, we are erudite, experienced
+              and...
+            </p>
+            <div class="mt-2"><a href="#" class="rounded btn btn-outline-primary">Read More</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="allads">
+    <div class="container-xl">
+      <div class="d-sm-block d-none">
+        <img src="img/myads.gif" class="d-block w-100">
+      </div>
+      <div class="d-sm-none d-block">
+        <img src="img/ads.jpg" class="d-block w-100">
+      </div>
+    </div>
+  </section>
+  <section class="gemstone py-5">
+    <div class="container-xl text-center">
+      <div class="gs-head allhead" data-aos="fade-up">
+        <h1>Gemstone</h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><i class="fas fa-gem fs-4 fw-bold"></i></span>
+        </div>
+        <p>
+          <span class="mt-3 fs-5 index_para px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore
+            labore repudiandae deserunt, consequuntur, tempora eligendi consectetur minus distinctio beatae adipisci
+            temporibus ipsa hic exercitationem incidunt? Nobis molestiae non porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ducimus quod nemo distinctio obcaecati
+            excepturi quisquam a fuga! Soluta, minus. Autem nobis earum nisi quidem consequatur obcaecati odio
+            perferendis? Eum!
+          </span>
+          <a href="gemstone.html">Read More</a>
+        </p>
+      </div>
+      <div class="serv_grid gap-3 mt-2">
+        <div class="box item">
+          <img src="img/Ruby-2.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+            <h4 class="pt-4">Ruby</h4>
+            <p class="clip_line">
+              Rubyy is red in color and associated with planet Sun who is the.....
+            </p>
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Prarl-1.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+            <h4 class="pt-4">Pearl</h4>
+            <p class="clip_line">
+              Pearl is white in color and is the symbol of purity, peace and.....
+            </p>
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Coral-1.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+
+            <h4 class="pt-4">Coral</h4>
+            <p class="clip_line">
+              The Coral holds a coveted place among the nine gems. It's.....
+            </p>
+
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Emerald-1.jpg" class="w-100" />
+          <div class="gm-cont px-1 ">
+
+            <h4 class="pt-4">Emerald</h4>
+            <p class="clip_line">
+              Emerald the green colored gem is the gem stone of Gemini, the.....
+            </p>
+
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Yellow-Sapphire-1.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+
+            <h4 class="pt-4">Yellow Sapphire</h4>
+            <p class="clip_line">
+              Yellow Sapphire is otherwise called Topaz. This visionary pearl.....
+            </p>
+
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Daimond-1.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+
+            <h4 class="pt-4">Diamond</h4>
+            <p class="clip_line">
+              Welcome to LOKNETRA JYOTISH SEWA, an unique Astrologer in.....
+            </p>
+
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Opal-1.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+
+            <h4 class="pt-4">opal</h4>
+            <p class="clip_line">
+              Opal is wear to Venus. In astrology, Venus represents beauty.....
+            </p>
+
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Blue-Sapphire-1.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+
+            <h4 class="pt-4">Blue Sapphire</h4>
+            <p class="clip_line">
+              Blue Sapphire is the gem stone that is associated with the biggest.....
+            </p>
+
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Hessonites-1.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+
+            <h4 class="pt-4">Hessonite</h4>
+            <p class="clip_line">
+              Hessonites are favorable for people born in the month of January.....
+            </p>
+
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+        <div class="box item">
+          <img src="img/Cats-Eye-1.jpg" class="w-100" />
+          <div class="gm-cont px-1">
+
+            <h4 class="pt-4">cat's eye</h4>
+            <p class="clip_line">
+              The Cat’s Eye is a gem related to the moon’s descending period.....
+            </p>
+
+          </div>
+          <div class="gem-read d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="allads pt-5">
+    <div class="container-xl">
+      <div class="row gy-3">
+        <div class="col-sm-4">
+          <img src="img/ad.gif" class="d-block w-100">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/adss.gif" class="d-block w-100">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/ad.gif" class="d-block w-100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="planets py-5">
+    <div class="container-xl text-center">
+      <div class="allhead">
+        <h1>Planets In Astrology
+        </h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><i class="fas fa-atom fs-4 fw-bold"></i></span>
+        </div>
+        <p>
+          <span class="index_para fs-5 mt-3 px-0"> In astrology, the nine planetary bodies in our nearby planetary group
+            each have a ʺPersonalityʺ, an emblematic importance and organization behind their energy. As they travel
+            through the sky, going through the twelve indications of the zodiac, their character comes through
+            differently. On this page, you’ll find the significance of every
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate a tempore porro et enim temporibus
+            mollitia, qui non aperiam placeat ab assumenda quod, totam dignissimos commodi quam natus sint.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id tempore asperiores rem dolore, veritatis est
+            odit dolores animi, expedita recusandae ab, sit commodi consequuntur consequatur magni alias similique
+            eveniet aliquam!
+          </span>
+
+          <a href="planet.html">Read More</a>
+        </p>
+
+      </div>
+      <div class="planet_grid mt-2 gap-3 text-center">
+        <div class="box">
+          <img src="img/Sun.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Sun</h4>
+            <p>
+              सूर्य ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Moon.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Moon</h4>
+            <p>
+              चन्द्र ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Mars.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Mars
+            </h4>
+            <p>
+              मंगल ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Mercury.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Mercury</h4>
+            <p>
+              बुध ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Jupiter.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Jupiter</h4>
+            <p>
+              बृहस्पति ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Venus.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Venus</h4>
+            <p>
+              शुक्र ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Saturn.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Saturn</h4>
+            <p>
+              शनि ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="more d-flex flex-column more_planet justify-content-center align-items-centter">
+          <h1>Explore All
+            Planets</h1>
+          <div class="explo mt-4">
+            <a href="#" class="more_planet rounded-pill fs-5 px-3 btn btn-outline-danger">Click Here</a>
+          </div>
+
+        </div>
+        <div class="box">
+          <img src="img/Rahu.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Rahu</h4>
+            <p>
+              राहु ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Ketu.jpg" />
+          <div class="pla-cont px-3">
+            <h4 class="pt-2">Ketu</h4>
+            <p>
+              केतु ग्रह
+            </p>
+            <div class="">
+              <a href="sun.html" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="allads">
+    <div class="container-xl">
+      <div class="d-sm-block d-none">
+        <img src="img/myads.gif" class="d-block w-100">
+      </div>
+      <div class="d-sm-none d-block">
+        <img src="img/ads.jpg" class="d-block w-100">
+      </div>
+    </div>
+  </section>
+  <section class="horoscope py-5">
+    <div class="container-xl text-center">
+      <div class="hors-head allhead">
+        <h1>Horoscope</h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><i class="fab fa-hornbill fs-4 fw-bold"></i></span>
+        </div>
+        <dl>
+          <span class="mt-3 fs-5 index_para px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore
+            labore repudiandae deserunt, consequuntur, tempora eligendi consectetur minus distinctio beatae adipisci
+            temporibus ipsa hic exercitationem incidunt? Nobis molestiae non porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ducimus quod nemo distinctio obcaecati
+            excepturi quisquam a fuga! Soluta, minus. Autem nobis earum nisi quidem consequatur obcaecati odio
+            perferendis? Eum!
+          </span>
+          <a href="planet.html">Read More</a>
+        </dl>
+      </div>
+      <div class="horoscope__grid pt-2 gy-4">
+        <div class="horoscope__item">
+          <div class="box">
+            <img src="img/Aries.jpg" />
+            <div class="gm-cont pb-2">
+              <h4>Aries</h4>
+              <p>
+                मेष राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="horoscope__item">
+          <div class="box ">
+            <img src="img/Taurus.jpg" />
+            <div class="gm-cont pb-2">
+
+              <h4>Taurus</h4>
+              <p>
+                वृष राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="horoscope__item">
+          <div class="box ">
+            <img src="img/Gemini.jpg" />
+            <div class="gm-cont pb-2">
+
+              <h4>Gemini</h4>
+              <p>
+                मिथुन राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="horoscope__item">
+
+          <div class="box ">
+            <img src="img/Cancer.jpg" />
+            <div class="gm-cont pb-2">
+              <h4>Cancer</h4>
+              <p>
+                कर्कट राशि
+              </p>
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="horoscope__item">
+          <div class="box ">
+            <img src="img/Leo.jpg" />
+            <div class="gm-cont pb-2">
+              <h4>Leo</h4>
+              <p>
+                सिंह राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="horoscope__item">
+          <div class="box ">
+            <img src="img/Virgo.jpg" />
+            <div class="gm-cont pb-2">
+              <h4>Virgo</h4>
+              <p>
+                कन्या राशि
+              </p>
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="horoscope__item">
+          <div class="box ">
+            <img src="img/Libra.jpg" />
+            <div class="gm-cont pb-2">
+
+              <h4>Libra</h4>
+              <p>
+                तुला राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="horoscope__item">
+
+          <div class="box ">
+            <img src="img/Scorpio.jpg" />
+            <div class="gm-cont pb-2">
+
+              <h4>Scorpio</h4>
+              <p>
+                वृश्चिक राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="horoscope__item">
+
+          <div class="box ">
+            <img src="img/Sagittarius.jpg" />
+            <div class="gm-cont pb-2">
+
+              <h4>Sagittarius</h4>
+              <p>
+                धनु राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="horoscope__item">
+
+          <div class="box ">
+            <img src="img/Capricorn.jpg" />
+            <div class="gm-cont pb-2">
+
+              <h4>Copricorn</h4>
+              <p>
+                मकर राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="horoscope__item">
+
+          <div class="box ">
+            <img src="img/Aquarius.jpg" />
+            <div class="gm-cont pb-2">
+              <h4>Aquarius</h4>
+              <p>
+                कुम्भ राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="horoscope__item">
+          <div class="box ">
+            <img src="img/Pisces.jpg" />
+            <div class="gm-cont pb-2">
+              <h4>Pisces</h4>
+              <p>
+                मीन राशि
+              </p>
+
+            </div>
+            <div class="read_hor d-flex justify-content-center align-items-center">
+              <a href="aries.html" class="btn btn-outline-light rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+      </div>
+  </section>
+  <section class="allads pt-3">
+    <div class="container-xl">
+      <div class="row gy-3">
+        <div class="col-sm-4">
+          <img src="img/ad.gif" class="w-100">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/adss.gif" class="w-100">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/ad.gif" class="w-100 ">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="constellation py-5">
+    <div class="container-xl text-center">
+      <div class="cons-head  allhead">
+        <h1>Constellation</h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><img src="https://img.icons8.com/ios/30/000000/leo.png" /></span>
+        </div>
+        <p>
+          <span class="mt-3 fs-5 index_para px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore
+            labore repudiandae deserunt, consequuntur, tempora eligendi consectetur minus distinctio beatae adipisci
+            temporibus ipsa hic exercitationem incidunt? Nobis molestiae non porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ducimus quod nemo distinctio obcaecati
+            excepturi quisquam a fuga! Soluta, minus. Autem nobis earum nisi quidem consequatur obcaecati odio
+            perferendis? Eum!
+          </span>
+          <a href="gemstone.html">Read More</a>
+        </p>
+      </div>
+      <div class="row pt-2 gy-3">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="box border ">
+            <img src="img/Ashwini-1.jpg" />
+            <div class="cons-cont  mt-3">
+              <h4>Ashwini</h4>
+              <p>
+                अश्विनी
+              </p>
+              <div class="">
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="box border">
+            <img src="img/Bharani-1.jpg" />
+            <div class="cons-cont  mt-3">
+              <h4>Bharani</h4>
+              <p>
+                भरणी
+              </p>
+              <div class="">
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="box border">
+            <img src="img/Krittika-1.jpg" />
+            <div class="cons-cont  mt-3">
+              <h4>Krittika</h4>
+              <p>
+                कृत्तिका
+              </p>
+              <div class="">
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="box border">
+            <img src="img/Rohini-1.jpg" />
+            <div class="cons-cont  mt-3">
+              <h4>Rohini</h4>
+              <p>
+                रोहिणी
+              </p>
+              <div class="">
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="box border">
+            <img src="img/Mrigashira-1.jpg" />
+            <div class="cons-cont  mt-3">
+              <h4>Mrigashira</h4>
+              <p>
+                मृगशीरा
+              </p>
+              <div class="">
+                <a href="constellation_detail.html" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="box border">
+            <img src="img/ardra1.png" />
+            <div class="cons-cont  mt-3">
+              <h4>Ardra</h4>
+              <p>
+                आर्द्रा
+              </p>
+              <div class="">
+                <a href="constellation_detail.html" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h3>Explore More Constellation <a href="constellation.html"
+            class="btn btn-outline-danger fs-5 px-3 rounded-pill">Click here</a></h3>
+      </div>
+
+    </div>
+  </section>
+  <section class="allads">
+    <div class="container-xl">
+      <div class="d-sm-block d-none">
+        <img src="img/myads.gif" class="d-block w-100">
+      </div>
+      <div class="d-sm-none d-block">
+        <img src="img/ads.jpg" class="d-block w-100">
+      </div>
+    </div>
+  </section>
+  <section class="busines_hour py-5">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="profile text-center">
+            <img src="img/Nabin.jpg" class="w-100">
+            <div class="d-flex justify-content-center pt-3">
+              <h3 class="btn btn-primary text-uppercase fs-4 ">Astrologer Nabin Upadhaya</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center bh">
+          <h1>BUSINESS HOURS</h1>
+          <div class="date_time mt-4">
+            <div id='tm'></div>
+            <div id="dt"></div>
+          </div>
+          <ul class="list-group list-group-flush lh-lg">
+            <div class="list-group-item d-flex schedule justify-content-between border-bottom fw-bold" id="sunday week"
+              data-val="0">
+              <div class="week">Sunday</div>
+              <div class="dtime">
+                08:00 AM - 08:00 PM
+              </div>
+            </div>
+            <div class="list-group-item d-flex schedule justify-content-between border-bottom fw-bold" id="monday week"
+              data-val="1">
+              <div class="week">Monday</div>
+              <div class="dtime">
+                08:00 AM - 08:00 PM
+              </div>
+            </div>
+            <div class="list-group-item d-flex schedule justify-content-between border-bottom fw-bold" id="tuesday week"
+              data-val="2">
+              <div class="week">Tuesday</div>
+              <div class="dtime">
+                08:00 AM - 08:00 PM
+              </div>
+            </div>
+            <div class="list-group-item d-flex schedule justify-content-between border-bottom fw-bold"
+              id="wednesday week" data-val="3">
+              <div class="week">Wednesday</div>
+              <div class="dtime">
+                08:00 AM - 08:00 PM
+              </div>
+            </div>
+            <div class="list-group-item d-flex schedule justify-content-between border-bottom fw-bold"
+              id="thursday week" data-val="4">
+              <div class="week">Thursday</div>
+              <div class="dtime">
+                08:00 AM - 08:00 PM
+              </div>
+            </div>
+            <div class="list-group-item d-flex schedule justify-content-between border-bottom fw-bold" id="friday week"
+              data-val="5">
+              <div class="week">Friday</div>
+              <div class="dtime">
+                08:00 AM - 08:00 PM
+              </div>
+            </div>
+            <div class="list-group-item d-flex schedule justify-content-between fw-bold" id="saturday week"
+              data-val="6">
+              <div class="week">Saturday</div>
+              <div class="dtime">
+                08:00 AM - 08:00 PM
+              </div>
+            </div>
+          </ul>
+          <div class="close d-flex align-items-center justify-content-center">
+            <p id="open-close-system"></p>
+            </span>
+          </div>
+          <a href="appointment.html" content="Book An Appointment" class="book-business mt-4"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="prediction">
+    <span class="moving-span"></span>
+    <span class="moving-span"></span>
+    <span class="moving-span"></span>
+    <span class="moving-span"></span>
+    <span class="moving-span"></span>
+    <span class="moving-span"></span>
+    <span class="moving-span"></span>
+    <span class="moving-span"></span>
+    <span class="moving-span"></span>
+
+    <div class="container-xl py-5">
+      <div class="row">
+        <div class="col-md-6  predict-info">
+          <h3 class="text-light fw-bold text-center text-md-start ms-lg-5 ps-lg-5 mt-md-4 pt-md-5">We Are Available 24 x
+            7</h3>
+          <div class="text-center text-light ready d-flex flex-column">
+            <h1>We Are Always</h1>
+            <h1> Ready For A </h1>
+            <h1>Prediction</h1>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-6">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="box d-flex flex-column justify-content-center align-items-center lh-1">
+                    <p><span>5 +</span></p>
+                    <p class="text-center">Years Experience</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="box d-flex flex-column justify-content-center align-items-center lh-1">
+                    <p><span data-target="4000" class="count">0</span><span>+</span></p>
+                    <p class="text-center">Stone Service</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="box d-flex flex-column justify-content-center align-items-center lh-1">
+                    <p><span data-target="20000" class="count">0</span><span>+</span></p>
+                    <p class="text-center">Total Service Provided</p>
+                  </div>
+                </div>
+                <div class="row gy-3">
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-6 mt-4">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="box d-flex flex-column justify-content-center align-items-center lh-1">
+                    <p><span data-target="3500" class="count">0</span><span>+</span></p>
+                    <p class="text-center">Kundali Made</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="box d-flex flex-column justify-content-center align-items-center lh-1">
+
+                    <p><span data-target="10000" class="count">0</span><span>+</span></p>
+
+                    <p class="text-center">Kundali Prediction</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="box d-flex flex-column justify-content-center align-items-center lh-1">
+                    <p><span data-target="1000" class="count">0</span><span>+</span></p>
+                    <p class="text-center">Foreign Clients</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="satisfied_client py-5">
+    <div class="container-xl text-center">
+      <div class="sat-head allhead">
+        <h1>Our Satisfied Clients</h1>
+        <div class="diamond_icon text-center text-dark">
+          <span><i class="fas fa-users fs-4 fw-bold"></i></span>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-4 owl-carousel owl-theme client">
+        <div class="item">
+          <div class="client_prof d-flex justify-content-center py-4 flex-column align-items-center">
+            <div class="client_img">
+              <img src="img/Januka-Chapagain-New.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="prof-cont">
+              <h5 class="pt-4">Januka Chapagain <span class="fullname_hover">Januka Chapagain</span></h5>
+              <!-- <h4 class="fullname_hover">Januka Chapagain</h4> -->
+              <h6 class="fw-bold mt-5 pt-3">Job Holder</h6>
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-muted">Phidim,Nepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_prof d-flex justify-content-center py-4 flex-column align-items-center">
+            <div class="client_img">
+              <img src="img/Rachana-Poudel-New.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="prof-cont">
+              <h5 class="pt-4">Rachana Paudel <span class="fullname_hover">Rachana Paudel</span></h5>
+              <h6 class="fw-bold mt-5 pt-3">Teacher</h6>
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-muted">Kathmandu,Nepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_prof d-flex justify-content-center py-4 flex-column align-items-center">
+            <div class="client_img">
+              <img src="img/Suren-Bhat-Lisbon-Portugal-New.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="prof-cont">
+              <h5 class="pt-4">Suresh Bhat <span class="fullname_hover">Suresh Bhat</span></h5>
+              <h6 class="fw-bold mt-5 pt-3">Job Holder</h6>
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-muted">Lisbon,Portugal</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_prof d-flex justify-content-center py-4 flex-column align-items-center">
+            <div class="client_img">
+              <img src="img/N.-K.-Sharad-New.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="prof-cont">
+              <h5 class="pt-4">N.K Sharad <span class="fullname_hover">N.K Sharad</span></h5>
+              <h6 class="fw-bold mt-5 pt-3">Businessman</h6>
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-muted">Kathmandu,Nepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_prof d-flex justify-content-center py-4 flex-column align-items-center">
+            <div class="client_img">
+              <img src="img/Sanu-Upadhaya-New.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="prof-cont">
+              <h5 class="pt-4">Sanu Upadhaya <span class="fullname_hover">Sanu Upadhaya</span></h5>
+              <h6 class="fw-bold mt-5 pt-3">Persobal Business</h6>
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-muted">Kathmandu,Nepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_prof d-flex justify-content-center py-4 flex-column align-items-center">
+            <div class="client_img">
+              <img src="img/Dipesh-Bhusal-New.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="prof-cont">
+              <h5 class="pt-4">Dipesh Bhusal <span class="fullname_hover">Dipesh Bhusal</span></h5>
+              <h6 class="fw-bold mt-5 pt-3">Student</h6>
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-muted">Butwal,Nepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_prof d-flex justify-content-center py-4 flex-column align-items-center">
+            <div class="client_img">
+              <img src="img/Ananta-Koirala-New.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="prof-cont">
+              <h5 class="pt-4">Ananta Koirala <span class="fullname_hover">Ananta Koirala</span></h5>
+              <h6 class="fw-bold mt-5 pt-3">Job Holder</h6>
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-muted">Hedauda,Nepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_prof d-flex justify-content-center py-4 flex-column align-items-center">
+            <div class="client_img">
+              <img src="img/Shristi-Bhattarai-New.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="prof-cont">
+              <h5 class="pt-4">Shristi Bhattarai <span class="fullname_hover">Shristi Bhattarai</span></h5>
+              <h6 class="fw-bold mt-5 pt-3">Job Holder</h6>
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-muted">Lumbini,Nepal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <dib id="incsidebar"></dib>
+  <div id="footer"></div>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script> -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/anim.js"></script>
+  <script src="js/typingtext.js"></script>
+  <script src="js/counter.js"></script>
+  <script>
+    $("#header").load("header.html")
+    $("#footer").load("footer.html")
+    // $("#planetslider").load("planet_slider.html")
+    // $("body").removeClass("open__modal");
+    if (
+      window.onload = function () {
+        $("#a").css("display", "block");
+        $("#b").css("display", "block");
+      }
+    ) {
+      $("body").addClass("open__modal");
+    }
+
+    $(".cancel").click(function () {
+      $("#a").css("display", "none");
+      $("#b").css("display", "none");
+      $("body").removeClass("open__modal");
+    })
+
+    $(document).ready(function () {
+      $(".nav-link").click(function () {
+        if (!$(this).hasClass('active_nav')) {
+          $(".nav-link.active_nav").removeClass("active_nav");
+          $(this).addClass("active_nav");
+        }
+      });
+    });
+    if (typeof jQuery == "undefined") {
+      document.write(
+        unescape(
+          "%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"
+        )
+      );
+    }
+    // AOS.init({
+    //   duration: 1000,
+    // });
+    var s = document.getElementsByTagName('div')
+    var date = new Date();
+    for (var i = 0; i < s.length; i++) {
+      if (s[i].getAttribute("data-val") == date.getDay()) {
+        s[i].style.color = "#2827CC"
+      }
+    }
+
+    // $(".mylink").click(function() {
+    //     $(".mylink").addClass("bb");
+    // });
+
+    //  
+    const counters = document.querySelectorAll('.count');
+    const speed = 400;
+
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const count = parseInt(counter.innerText);
+        const increment = Math.trunc(target / speed);
+
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+    var checkOpenStatus = function () {
+      var x = new Date();
+      // var ampm = x.getHours() >= 12 ? " PM" : " AM";
+      let x1 = x.getHours();
+      let min = x.getMinutes();
+      let sec = x.getSeconds();
+      console.log(x1)
+      // var day = x.getDate();
+      // console.log(day);
+      if (x1 >= 8 && min >= 00 && x1 <= 19 && min >= 00) {
+        y = '<span style="color:#063C5C;font-weight:bold">Office Opened. Right now we are available.</span>';
+      } else {
+        y = '<span style="color:#fc4b1c;font-weight:bold">Office Closed. Right now we are not available.</span>';
+      }
+      document.getElementById("open-close-system").innerHTML = y;
+      setTimeout(checkOpenStatus, 15000);
+    };
+    checkOpenStatus();
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 100) {
+        $(".subscribe").addClass("load-popup");
+      }
+    });
+
+    $('.later-close').click(function () {
+      $('.sub-popup').hide();
+    })
+  </script>
+</body>
+
+</html>

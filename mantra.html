@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/Icon1.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Mantra</title>
+  <style>
+    .accordion-btn,
+    .mantra_btn {
+      background: rgb(2, 51, 83) !important;
+      color: rgb(255, 255, 255) !important;
+      cursor: pointer;
+      padding: 10px 40px 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.3rem !important;
+      font-weight: 600;
+      transition: 0.4s;
+      margin: 10px 0;
+      border-radius: 10px !important;
+      position: relative;
+    }
+
+    .activ,
+    .accordion-btn:hover,
+    .mantra_btn:hover {
+      background-color: rgb(49, 54, 47) !important;
+      color: #fff;
+    }
+
+    .accordion-btn:after {
+      content: "\002B";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      margin: 0 5px;
+    }
+
+    .activ:after {
+      content: "\2212";
+    }
+
+    .panel {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .mantra-detail {
+      border: 1px solid rgb(5, 106, 240);
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="mantra_banner text-center">
+
+    <div class="mantra-flex">
+      <div class="">
+        <img src="img/oman.gif" alt="" class="d-block w-100">
+      </div>
+      <div class="">
+        <img src="img/oman.gif" alt="" class="d-block w-100">
+      </div>
+    </div>
+    <h1>Mantra</h1>
+  </div>
+  <section class="mantra py-5">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-sm-7 col-md-8 col-lg-9">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-mantra">
+                <button class="accordion-button mantra_btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseMantra" aria-expanded="false" aria-controls="flush-collapseMantra">
+                  मन्त्र (Mantra)
+                </button>
+              </h2>
+              <div id="flush-collapseMantra" class="accordion-collapse collapse" aria-labelledby="flush-mantra"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="all_mantras">
+                    <button class="accordion-btn">
+                      गायत्री मन्त्र (Gayetri Mantra)
+                    </button>
+                    <div class="panel">
+                      <div class="mantra-detail text-center">
+                        <h6>।। <span>गायत्री मन्त्र (Gayetri Mantra)</span> ।।</h6>
+                        <ul class="p-0">
+                          <li>ॐ भुर्भूवः स्वः</li>
+                          <li>तत्सवितूर्वरेन्यं ।</li>
+                          <li>भर्वो देवस्य धीमहि,</li>
+                          <li>धीयो यो नः प्रचोदयत् ।।</li>
+                        </ul>
+                        <ul class="p-0">
+                          <li>Aum Bhur- Bhuvah- Swah</li>
+                          <li>Tatsavitur Varenyam</li>
+                          <li>Bhargo Devasva Dhimahi.</li>
+                          <li>Dhiyo Yo Nah Pracodayat.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="accordion-btn">श्री गणेश मंत्र (Ganesh Mantra)</button>
+                    <div class="panel">
+                      <div class="mantra-detail text-center">
+                        <h6>।। <span>श्री गणेश मंत्र (Ganesh Mantra)</span> ।।</h6>
+                        <ul class="p-0">
+                          <li>वक्रतुण्ड महाकाय, सूर्यकोटि समप्रभ</li>
+                          <li>निर्विघ्नं कुरु मे देव, सर्वकार्येषु सर्वदा</li>
+                          <li>(ॐ)</li>
+                          <br />
+                          <li>ॐ लंबोदर नमो नमः, ॐ विघ्नेश्वर नमो नमः</li>
+                          <li>ॐ हिवेश्वर नमो नमः, ॐ चिंतामणि नमो नमः</li>
+                          <li>(ॐ लंबोदर नमो नमः, ॐ पीतांबर नमो नमः)</li>
+                          <li>(ॐ हिवेश्वर नमो नमः, ॐ चिंतामणि नमो नमः)</li>
+                          <br />
+                          <li>ॐ गौरिश्वर नमो नमः, ॐ गिरिजापत नमः</li>
+                          <li>(ॐ गौरेश्वर नमो नमः, ॐ गिरिजापत नमः)</li>
+                          <li>ॐ पालेश्वर नमो नमः, ॐ मयुरेश्वर नमो नमः</li>
+                          <li>(ॐ पालेश्वर नमो नमः, ॐ मयुरेश्वर नमो नमः)</li>
+                          <br />
+                          <li>ॐ लंबोदर नमो नमः, ॐ विघ्नेश्वर नमो नमः</li>
+                          <li>(ॐ लंबोदर नमो नमः, ॐ पीतांबर नमो नमः)</li>
+                          <li>(ॐ हिवेश्वर नमो नमः, ॐ चिंतामणि नमो नमः)</li>
+                          <br />
+                          <li>ॐ राजणिश्वर नमो नमः, श्री सिद्धी विनायक नमो नमः</li>
+                          <li>(ॐ रमणिश्वर नमो नमः, श्री सिद्धी विनायक नमो नमः)</li>
+                          <li>ॐ पहाड़ेश्वर नमो नमः, ॐ अष्टविनयक नमो नमः</li>
+                          <li>(ॐ पहाड़ेश्वर नमो नमः, अष्टविनयक नमो नमः)</li>
+                          <br />
+                          <li>ॐ लंबोदर नमो नमः, ॐ विघ्नेश्वर नमो नमः</li>
+                          <li>(ॐ लंबोदर नमो नमः, ॐ पीतांबर नमो नमः)</li>
+                          <li>(ॐ लंबोदर नमो नमः, ॐ पीतांबर नमो नमः)</li>
+
+                          <br />
+                          <li>ॐ गौरिश्वर नमो नमः, ॐ गिरिजापत नमः</li>
+                          <li>(ॐ गौरेश्वर नमो नमः, ॐ गिरिजापत नमः)</li>
+                          <li>ॐ पालिश्वर नमो नमः, ॐ मयुरेश्वर नमो नमः</li>
+                          <li>(ॐ पालेश्वर नमो नमः, ॐ मयुरेश्वर नमो नमः)</li>
+                          <br />
+                          <li>ॐ लंबोदर नमो नमः, ॐ विघ्नेश्वर नमो नमः</li>
+                          <li>(ॐ लंबोदर नमो नमः, ॐ पीतांबर नमो नमः)</li>
+                          <li>(ॐ हिवेश्वर नमो नमः, ॐ चिंतामणि नमो नमः)</li>
+                          <br />
+                          <li>ॐ राजणिश्वर नमो नमः, श्री सिद्धी विनायक नमो नमः</li>
+                          <li>(ॐ रमणिश्वर नमो नमः, श्री सिद्धी विनायक नमो नमः)</li>
+                          <li>ॐ पहाड़ेश्वर नमो नमः, ॐ अष्टविनयक नमो नमः</li>
+                          <li>(ॐ पहाड़ेश्वर नमो नमः, अष्टविनयक नमो नमः)</li>
+                          <br />
+                          <li>ॐ लंबोदर नमो नमः, ॐ विघ्नेश्वर नमो नमः</li>
+                          <li>(ॐ लंबोदर नमो नमः, ॐ पीतांबर नमो नमः)</li>
+                          <li>(ॐ हिवेश्वर नमो नमः, ॐ चिंतामणि नमो नमः)</li>
+                        </ul>
+                        <ul class="p-0">
+                          <li>Vakratund Mahakaya, Suryakoti Samprabha</li>
+                          <li>God in Nirvighnam Kuru, Sarvakaryeshu always</li>
+                          <li>(e)</li>
+                          <br />
+                          <li>Om Lambodar Namo Namah, Om Vighneshwar Namo Namah</li>
+                          <li>Om Hiveshwar Namo Namah, Om Chintamani Namo Namah</li>
+                          <li>(Om Lambodar Namo Namah, Om Pitambar Namo Namah)</li>
+                          <li>(Om Hiveshwar Namo Namah, Om Chintamani Namo Namah)</li>
+                          <br />
+                          <li>Om Gaurishvara Namo Namah, Om Girijapat Namah</li>
+                          <li>(Om Gaursvara Namo Namah, Om Girijapat Namah)</li>
+                          <li>Om Paleshwar Namo Namah, Om Mayureshwar Namo Namah</li>
+                          <li>(Om Paleshwar Namo Namah, Om Mayureshwar Namo Namah)</li>
+                          <br />
+                          <li>Om Lambodar Namo Namah, Om Vighneshwar Namo Namah</li>
+                          <li>(Om Lambodar Namo Namah, Om Pitambar Namo Namah)</li>
+                          <li>(Om Hiveshwar Namo Namah, Om Chintamani Namo Namah)</li>
+                          <br />
+                          <li>
+                            Om Rajneshwar Namo Namah, Shri Siddhi Vinayak Namo Namah
+                          </li>
+                          <li>
+                            (Om Ramishwar Namo Namah, Shri Siddhi Vinayak Namo Namah)
+                          </li>
+                          <li>Om Pahareshwar Namo Namah, Om Ashtavinayak Namo Namah</li>
+                          <li>(Om Pahareshwar Namo Namah, Ashtavinayak Namo Namah)</li>
+                          <br />
+                          <li>Om Lambodar Namo Namah, Om Vighneshwar Namo Namah</li>
+                          <li>(Om Lambodar Namo Namah, Om Pitambar Namo Namah)</li>
+                          <li>(Om Hiveshwar Namo Namah, Om Chintamani Namo Namah)</li>
+                          <br />
+                          <li>Om Gaurishvara Namo Namah, Om Girijapat Namah</li>
+                          <li>(Om Gaursvara Namo Namah, Om Girijapat Namah)</li>
+                          <li>Om Palishwar Namo Namah, Om Mayureshwar Namo Namah</li>
+                          <li>(Om Paleshwar Namo Namah, Om Mayureshwar Namo Namah)</li>
+                          <br />
+                          <li>Om Lambodar Namo Namah, Om Vighneshwar Namo Namah</li>
+                          <li>(Om Lambodar Namo Namah, Om Pitambar Namo Namah)</li>
+                          <li>(Om Hiveshwar Namo Namah, Om Chintamani Namo Namah)</li>
+                          <br />
+                          <li>
+                            Om Rajneshwar Namo Namah, Shri Siddhi Vinayak Namo Namah
+                          </li>
+                          <li>
+                            (Om Ramishwar Namo Namah, Shri Siddhi Vinayak Namo Namah)
+                          </li>
+                          <li>Om Pahareshwar Namo Namah, Om Ashtavinayak Namo Namah</li>
+                          <li>(Om Pahareshwar Namo Namah, Ashtavinayak Namo Namah)</li>
+                          <br />
+                          <li>Om Lambodar Namo Namah, Om Vighneshwar Namo Namah</li>
+                          <li>(Om Lambodar Namo Namah, Om Pitambar Namo Namah)</li>
+                          <li>(Om Hiveshwar Namo Namah, Om Chintamani Namo Namah)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-aarati">
+                <button class="accordion-button mantra_btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseArati" aria-expanded="false" aria-controls="flush-collapseArati">
+                  आरति(Aarati)
+                </button>
+              </h2>
+              <div id="flush-collapseArati" class="accordion-collapse collapse" aria-labelledby="flush-aarati"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="all_mantras">
+                    <button class="accordion-btn">
+                      सत्यनारायण पूजा आरती
+                    </button>
+                    <div class="panel">
+                      <div class="mantra-detail text-center">
+                        <h6>।। <span>सत्यनारायण पूजा आरती (Satyanarayan Puja Aarti)</span> ।।</h6>
+                        <ul class="p-0">
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी जय लक्ष्मीरमणा |</li>
+                          <li>सत्यनारायण स्वामी ,जन पातक हरणा ||</li>
+                          <li>जय लक्ष्मीरमणा रत्नजडित सिंहासन , अद्भुत छवि राजें |</li>
+                          <li>नारद करत निरतंर घंटा ध्वनी बाजें ॥</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी....</li>
+                          <br>
+                          <li>प्रकट भयें कलिकारण ,द्विज को दरस दियो |</li>
+                          <li>बूढों ब्राम्हण बनके ,कंचन महल कियों ॥</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी.....</li>
+                          <br>
+                          <li>दुर्बल भील कठार, जिन पर कृपा करी |</li>
+                          <li>च्रंदचूड एक राजा तिनकी विपत्ति हरी ॥</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी.....</li>
+                          <br>
+                          <li>वैश्य मनोरथ पायों ,श्रद्धा तज दिन्ही |</li>
+                          <li>सो फल भोग्यों प्रभूजी , फेर स्तुति किन्ही ॥</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी.....</li>
+                          <br>
+                          <li>भाव भक्ति के कारन .छिन छिन रुप धरें |</li>
+                          <li>श्रद्धा धारण किन्ही ,तिनके काज सरें ॥</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी.....</li>
+                          <br>
+                          <li>ग्वाल बाल संग राजा ,वन में भक्ति करि |</li>
+                          <li>मनवांचित फल दिन्हो ,दीन दयालु हरि ॥</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी.....</li>
+                          <br>
+                          <li>चढत प्रसाद सवायों ,दली फल मेवा |</li>
+                          <li>धूप दीप तुलसी से राजी सत्य देवा ॥</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी.....</li>
+                          <br>
+                          <li>सत्यनारायणजी की आरती जो कोई नर गावे |</li>
+                          <li>ऋद्धि सिद्धी सुख संपत्ति सहज रुप पावे ॥</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी.....</li>
+                          <br>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी जय लक्ष्मीरमणा|</li>
+                          <li>ॐ जय लक्ष्मीरमणा स्वामी जय लक्ष्मीरमणा|</li>
+
+                        </ul>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-chalisa">
+                <button class="accordion-button mantra_btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseChalisa" aria-expanded="false" aria-controls="flush-collapseChalisa">
+                  चालीसा(Chalisa)
+                </button>
+              </h2>
+              <div id="flush-collapseChalisa" class="accordion-collapse collapse" aria-labelledby="flush-chalisa"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="all_chalisa">
+                    <button class="accordion-btn">हनुमान चालीसा (Hanuman Chalisa)</button>
+                    <div class="panel">
+                      <div class="mantra-detail text-center">
+                        <h6>।। <span>हनुमान चालीसा (Hanuman Chalisa)</span> ।।</h6>
+                        <ul class="p-0">
+                          <h5 class="text-dark fw-bold">दोहा</h5>
+                          <li>श्रीगुरु चरन सरोज रज निजमनु मुकुरु सुधारि।</li>
+                          <li>बरनउँ रघुबर बिमल जसु जो दायकु फल चारि।।</li>
+                          <li>बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार।</li>
+                          <li>बल बुधि बिद्या देहु मोहिं, हरहु कलेस बिकार।।</li>
+                          <br />
+                          <h5 class="text-dark fw-bold">चौपाई</h5>
+                          <li>जय हनुमान ज्ञान गुन सागर।</li>
+                          <li>जय कपीस तिहुं लोक उजागर।।</li>
+                          <li>रामदूत अतुलित बल धामा।</li>
+                          <li>अंजनि-पुत्र पवनसुत नामा।।</li>
+                          <br />
+                          <li>महावीर विक्रम बजरंगी।</li>
+                          <li>कुमति निवार सुमति के संगी।।</li>
+                          <li>कंचन वरन विराज सुवेसा।</li>
+                          <li>कानन कुण्डल कुंचित केसा।।</li>
+                          <br />
+                          <li>हाथ बज्र औ ध्वजा बिराजै।</li>
+                          <li>काँधे मूँज जनेऊ साजै।</li>
+                          <li>शंकर सुवन केसरीनंदन।</li>
+                          <li>तेज प्रताप महा जग वन्दन।।</li>
+                          <br />
+                          <li>विद्यावान गुणी अति चातुर।</li>
+                          <li>राम काज करिबे को आतुर।।</li>
+                          <li>प्रभु चरित्र सुनिबे को रसिया।</li>
+                          <li>राम लखन सीता मन बसिया।।</li>
+                          <br />
+                          <li>सूक्ष्म रूप धरि सियहिं दिखावा।</li>
+                          <li>विकट रूप धरि लंक जरावा।।</li>
+                          <li>भीम रूप धरि असुर संहारे।</li>
+                          <li>रामचंद्र के काज संवारे।।</li>
+                          <br />
+                          <li>लाय सजीवन लखन जियाये।</li>
+                          <li>श्रीरघुबीर हरषि उर लाये।।</li>
+                          <li>रघुपति कीन्ही बहुत बड़ाई।</li>
+                          <li>रघुपति कीन्ही बहुत बड़ाई।</li>
+                          <br />
+                          <li>सहस बदन तुम्हरो जस गावैं।</li>
+                          <li>अस कहि श्रीपति कंठ लगावैं।।</li>
+                          <li>सनकादिक ब्रह्मादि मुनीशा।</li>
+                          <li>नारद सारद सहित अहीसा।।</li>
+                          <br />
+                          <li>जम कुबेर दिगपाल जहां ते।</li>
+                          <li>कवि कोविद कहि सके कहाँ ते।।</li>
+                          <li>तुम उपकार सुग्रीवहिं कीन्हा।</li>
+                          <li>तुम उपकार सुग्रीवहिं कीन्हा।</li>
+                          <br />
+                          <li>तुम्हरो मंत्र विभीषन माना।</li>
+                          <li>लंकेश्वर भये सब जग जाना।।</li>
+                          <li>जुग सहस्र योजन पर भानू।</li>
+                          <li>लील्यो ताहि मधुर फल जानू।।</li>
+                          <br />
+                          <li>प्रभु मुद्रिका मेलि मुख माहीं।</li>
+                          <li>जलधि लांघि गये अचरज नाहीं।।</li>
+                          <li>दुर्गम काज जगत के जेते।</li>
+                          <li>सुगम अनुग्रह तुम्हरे तेते।।</li>
+                          <br />
+                          <li>राम दुआरे तुम रखवारे।</li>
+                          <li>होत न आज्ञा बिनु पैसारे।।</li>
+                          <li>सब सुख लहै तुम्हारी सरना।</li>
+                          <li>तुम रक्षक काहू को डरना।।</li>
+                          <br />
+                          <li>आपन तेज सम्हारो आपै।</li>
+                          <li>तीनों लोक हांक तें कांपै।।</li>
+                          <li>भूत पिसाच निकट नहिं आवै।</li>
+                          <li>महाबीर जब नाम सुनावै।।</li>
+                          <br />
+                          <li>नासै रोग हरै सब पीरा।</li>
+                          <li>जपत निरंतर हनुमत बीरा।।</li>
+                          <li>संकट तें हनुमान छुड़ावै।</li>
+                          <li>मन क्रम वचन ध्यान जो लावै।।</li>
+                          <br />
+                          <li>सब पर राम तपस्वी राजा।</li>
+                          <li>तिनके काज सकल तुम साजा।</li>
+                          <li>और मनोरथ जो कोई लावै।</li>
+                          <li>सोई अमित जीवन फल पावै।।</li>
+                          <br />
+                          <li>सोई अमित जीवन फल पावै।।</li>
+                          <li>है परसिद्ध जगत उजियारा।।</li>
+                          <li>साधु-संत के तुम रखवारे।</li>
+                          <li>असुर निकंदन राम दुलारे।।</li>
+                          <br />
+                          <li>अष्ट सिद्धि नौ निधि के दाता।</li>
+                          <li>अस वर दीन जानकी माता।।</li>
+                          <li>राम रसायन तुम्हरे पासा।</li>
+                          <li>सदा रहो रघुपति के दासा।।</li>
+                          <br />
+                          <li>तुम्हरे भजन राम को भावै।</li>
+                          <li>जनम-जनम के दुख बिसरावै।।</li>
+                          <li>अन्त काल रघुबर पुर जाई।</li>
+                          <li>जहाँ जन्म हरि-भक्त कहाई।।</li>
+                          <br />
+                          <li>और देवता चित्त न धरई।</li>
+                          <li>हनुमत सेई सर्व सुख करई।।</li>
+                          <li>संकट कटै मिटै सब पीरा।</li>
+                          <li>जो सुमिरै हनुमत बलबीरा।।</li>
+                          <br />
+                          <li>जै जै जै हनुमान गोसाईं।</li>
+                          <li>जै जै जै हनुमान गोसाईं।</li>
+                          <li>जै जै जै हनुमान गोसाईं।</li>
+                          <li>छूटहिं बंदि महा सुख होई।।</li>
+                          <br />
+                          <li>जो यह पढ़ै हनुमान चालीसा।</li>
+                          <li>होय सिद्धि साखी गौरीसा।।</li>
+                          <li>होय सिद्धि साखी गौरीसा।।</li>
+                          <li>कीजै नाथ हृदय महँ डेरा।।</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-other">
+                <button class="accordion-button mantra_btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOther" aria-expanded="false" aria-controls="flush-collapseOther">
+                  अन्य(Other)
+                </button>
+              </h2>
+              <div id="flush-collapseOther" class="accordion-collapse collapse" aria-labelledby="flush-other"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><button class="accordion-btn">ABCD</button>
+                  <div class="panel">
+                    <div class="mantra-detail text-center">
+                      <h6>।। <span>ABCD</span> ।।</h6>
+                      <ul class="p-0">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-md-4 col-lg-3">
+          <div id="sidebar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    $("#sidebar").load("sidebar.html");
+    var acc = document.getElementsByClassName("accordion-btn");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("activ");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/Icon1.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="about_banner">
+    <div class="dk"></div>
+    <h1 class="text-light">CONTACT US</h1>
+  </div>
+  <div class="contact_us  py-5">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact_left shadow-lg p-4 mt-2">
+            <h3>Get In Touch</h3>
+            <p class="fs-5">
+              If you have any further questions or queries please do not hesitate to get in touch. </p>
+            <form method="post mt-3">
+              <div class="d-flex flex-column gap-3">
+                <input type="text" name="name" placeholder="Your Name" class="form-control py-2" />
+                <input type="email" name="email" placeholder="Your Email" class="form-control py-2" />
+                <input type="number" name="number" placeholder="Your Contact Number" class="form-control py-2" />
+                <input type="text" name="subject" placeholder="Your Subject" class="form-control py-2" />
+                <textarea type="text" name="message" placeholder="Your Message" class="form-control h-100"></textarea>
+              </div>
+              <div class="submit_btn mt-4">
+                <button class="contact_submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="shadow-lg contact_right p-4 mt-2">
+            <h3>Quick Find Us</h3>
+            <div class="mt-4 fs-5">
+              <h5>Email:</h3>
+                <div class="lh-sm d-flex flex-column">
+                  <p>info@jyotishnepal.com</p>
+                  <p>jyotishnepal2@gmail.com</p>
+                  <p>loknetrajyotishsewa@gmail.com</p>
+                </div>
+                <h5 class="mt-3">Contact:</h5>
+                <div class="lh-sm">
+                  <p>+977-9851150093</p>
+                  <p>+977-9813540330</p>
+                </div>
+                <h5 class="mt-4">Address:</h5>
+                <div class="">
+                  <small>Satdobato-23, Lalitpur, Nepal,<br> Behind Sumeru Haspital & Gems School</small>
+                </div>
+                <div class="bookapnt bookmt pt-5">
+                  <a href="appointment.html" class="btn btn-outline-danger fw-bold px-4 py-2 rounded-pill">Book An
+                    Appointment</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="mymap py-5">
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.973599889753!2d85.31192541503582!3d27.718101382787545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197acf2098ab%3A0xc1a3576a21517dc8!2sHorizon%20International!5e0!3m2!1sen!2snp!4v1640256404329!5m2!1sen!2snp"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  </section>
+  <div id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $("#header").load("header.html")
+    $("#footer").load("footer.html")
+    var s = document.getElementsByTagName('div')
+    var date = new Date();
+    for (var i = 0; i < s.length; i++) {
+      if (s[i].getAttribute("data-val") == date.getDay()) {
+        s[i].style.color = "#3DBE29"
+      }
+    }
+  </script>
+</body>
+
+</html>

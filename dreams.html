@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/Icon1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Dreams</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="about_banner dreams_banner text-center">
+    <h1>Dreams</h1>
+  </div>
+  <section class="dreams py-5">
+    <div class="container-xl">
+      <h1 class="text-center">
+        कस्तो सपानाको अर्थ के ?<br />
+        <span><i class="fas fa-eye"></i></span>
+      </h1>
+      <div class="all-dreams mt-5">
+        <!-- <div class="border d-flex filter_dream gap-0">
+          <button class="activeDream btn" id="all">सबै</button>
+          <button class="btn" id="क" id="कँ काँ का कि की कु कू के कै को कौ कं कृ कः ">
+            क
+          </button>
+          <button class="btn" id="ख" id="खृ खँ खाँ खा खि खी खु खू खे खै खो खौ खं">
+            ख
+          </button>
+          <button class="btn" id="ग" id="गँ गृ गा गी गि गु गू गे गै गो गौ">
+            ग
+          </button>
+          <button class="btn" id="घ" id="घा घि घी घु घू घृ घे	घै	घो	घौ	घँ	घ:">
+            घ
+          </button>
+          <button class="btn" id="ङ">
+            ङ
+          </button>
+          <button class="btn" id="च" id="चा	चि	ची	चु	चू	चृ	चे	चै	चो	चौ	चँ	चः">च</button>
+          <button class="btn" id="छ" id="छा	छि	छी	छु	छू	छृ	छे	छै	छो	छौ	छँ	छ:">छ</button>
+          <button class="btn" id="ज" id="जा	जि	जी	जु	जू	जृ	जे	जै	जो	जौ	जँ	जः">ज</button>
+          <button class="btn" id="झ" id="झा	झि	झी	झु	झू	झृ	झे	झै	झो	झौ	झँ	झ:">झ</button>
+          <button class="btn" id="ञ">ञ
+          </button>
+          <button class="btn" id="ट" id="टा	टी	टी	ट	टू	टृ	टे	टै	टो	टौ	तँ	ट:">ट</button>
+          <button class="btn" id="ठ" id="ठा	ठि	ठी	ठु	ठू	ठृ	ठे	ठै	ठो	ठौ	ठँ	ठ:">ठ</button>
+          <button class="btn" id="ड" id="डा	डि	डी	डु	डू	डृ	डे	डै	डो	डौ	डँ	ड:">ड</button>
+          <button class="btn" id="ढ" id="ढा	ढि	ढी	ढु	ढू	ढृ	ढे	ढै	ढो	ढौ	ढँ	ढ:">ढ</button>
+          <button class="btn" id="ण" id="णा	णि	णी	णु	णू	णृ	णे	णै	णो	णौ	णँ	ण:">ण</button>
+          <button class="btn" id="त" id="ता	ति	ती	तु	तू	तृ	ते	तै	तो	तौ	तँ	त:">त</button>
+          <button class="btn" id="थ" id="था	थि	थी	थु	थू	थृ	थे	थै	थो	थौ	थँ	थ:">थ</button>
+          <button class="btn" id="द" id="दा	दि	दी	दु	दू	दरि	दे	दै	दो	दौ	दँ	द:">द</button>
+          <button class="btn" id="ध" id="धा	धि	धी	धु	धू	धृ	धे	धै	धो	धौ	धँ	ध:">ध</button>
+          <button class="btn" id="न" id="ना	नि	नी	नु	नू	नृ	ने	नै	नो	नौ	नँ	न:">न</button>
+          <button class="btn" id="प" id="पा	पि	पी	पु	पू	पृ	पे	पै	पो	पौ	पँ	प:">प</button>
+          <button class="btn" id="फ" id="फा	फि	फी	फु	फू	फृ	फे	फै	फो	फौ	फँ	फ:">फ</button>
+          <button class="btn" id="ब" id="बा	बि	बी	बु	बू	बृ	बे	बै	बो	बौ	बँ	ब:">ब</button>
+          <button class="btn" id="भ" id="भा	भि	भी	भु	भू	भृ	भे	भौ	भो	भौ	भँ	भ:">भ</button>
+          <button class="btn" id="म" id="मा	मि	मी	मु	मू	मृ	मे	मै	मो	मौ	मँ	म:">म</button>
+          <button class="btn" id="य" id="या	यि	यी	यु	यू	यृ	ये	यै	यो	यौ	यँ	य:">य</button>
+          <button class="btn" id="र" id="रा	रि	री	रु	रू	रृ	रे	रै	रो	रौ	रँ	र:">र</button>
+          <button class="btn" id="ल" id="ला	लि	ली	लु	लू	लृ	ले	लै	लो	लौ	लँ	ल:">ल</button>
+          <button class="btn" id="व" id="वा	वि	वी	वु	वू	वृ	वे	वै	वो	वौ	वँ	व:">व</button>
+          <button class="btn" id="श" id="शा	शि	शी	शु	शू	शृ	शे	शै	शो	शौ	शँ	शः">श</button>
+          <button class="btn" id="ष" id="षा	षि	षी	षु	षू	षृ	षे	षै	षो	षौ	षँ	ष:">ष</button>
+          <button class="btn" id="स" id="सा	सि	सी	सु	सू	सृ	से	सै	सो	सौ	सँ	स:">स</button>
+          <button class="btn" id="ह" id="हा	हि	ही	हु	हू	ह्	हे	है	हो	हौ	हँ	ह:">ह</button>
+          <button class="btn" id="क्ष" id="क्षा	क्षि	क्षी	क्षु	क्षू	क्षृ	क्षे	क्षै	क्षो	क्षौ	क्षँ	क्षः">
+            क्ष
+          </button>
+          <button class="btn" id="त्र" id="त्रा	त्रि	त्री	त्रु	त्रू	त्रृ	त्रे	त्रै	त्रो	त्रौ	त्रँ	त्र:">
+            त्र
+          </button>
+          <button class="btn" id="ज्ञ" id="ज्ञा	ज्ञि	ज्ञी	ज्ञु	ज्ञू	ज्ञृ	ज्ञे	ज्ञै	ज्ञो	ज्ञौ	ज्ञँ	ज्ञ:">
+            ज्ञ
+          </button>
+          <button class="btn" id="अ" id="अं अः">अ</button>
+          <button class="btn" id="आ">आ</button>
+          <button class="btn" id="इ">इ</button>
+          <button class="btn" id="ई">ई</button>
+          <button class="btn" id="उ">उ</button>
+          <button class="btn" id="ऊ">ऊ</button>
+          <button class="btn" id="ऋ">ऋ</button>
+          <button class="btn" id="ए">ए</button>
+          <button class="btn" id="ऐ">ऐ</button>
+          <button class="btn" id="ओ">ओ</button>
+          <button class="btn" id="औ">औ</button>
+          <button class="btn" id="अं">अं</button>
+          <button class="btn" id="अ:">अ:</button>
+        </div> -->
+        <div class="row">
+          <div class="col-sm-7 col-md-8 col-lg-9">
+            <ul class="p-0 mt-4 d-flex flex-column gap-3" id="parent">
+              <li class="box">
+                <h5><span>गर्भवती भएको सपना देखेमा </span></h5>
+                <p>
+                  आफु गर्भवती भएको सपना देख्नुको अर्थ हुन्छ तपाइँभित्र नयाँ जिवनको
+                  सुरुवात भएको छ अर्थात् नयाँ उर्जा तथा आइडियाको विकाश हुँदैछ ।
+                  स्टउट भन्छन्-यसको अर्थ तपाइँले पुनर्जिवन पाउँदै हुनुहुन्छ, नयाँ
+                  मार्गतर्फ लम्किँदै हुनुहुन्छ अर्थात् जिवनमा काँचुली फेर्दै
+                  हुनुहुन्छ ।
+                </p>
+                <aside class="conditions my-3">
+                  <h5><small class="text-start">अवश्थाहरु</small></h5>
+                  <ol class="d-flex flex-column gap-3 mt-4">
+                    <li>जन्मकुण्डलीको बिस्तृत अध्यन गरेर सपनाको फल बताउन सकिन्छ । रातिलाई चार प्रहरमा भाग गर्दा पहिलो
+                      प्रहरको सपनाको फल एक वर्ष,
+                      दोस्रो प्रहरको सपनाको फल आठ महिना, तेस्रो प्रहरको फल एक महिना र बिहान व्रह्ममूहुर्तको र
+                      सुर्योदयभन्दा पूर्वको सपनाको फल
+                      त्यहि दिन देखी दस दिनसम्म पुरा हुन सक्दछ ।</li>
+                    <li>शुक्लपक्ष षष्ठी, सप्तमी, अष्टमी र नवमी अनि कृष्ण पक्षको चतुर्दशीमा देखेको सपनाको फल छिटो प्राप्त
+                      हुन्छ । पूर्णीमामा
+                      देखेको सपनाको फल अवस्य प्राप्त हुन्छ।</li>
+                    <li>भगवान शिव सपनामा देखिनु विपत्तिको नाश, देवी देखिएमा रोगबाट मुक्ति र सरस्वती सपनामा देखिनुभए
+                      ज्ञानमा वृद्धि हुन्छ ।
+                      डाक्टर देखे रोग बढ्ने, अतिथी आएको देखे राम्रा खबर सुन्न पाईने, हुलाकी देखे नयाँ खबर आउन सक्ने,
+                      पुजारी देखे उन्नति हुन्न
+                      सक्ने, भिखारी देखे राम्रो समयको</li>
+                  </ol>
+                </aside>
+
+              </li>
+              <li class="box">
+                <h5><span>भुतपूर्व पार्टनरको बारेमा सपना देखेमा</span></h5>
+                <p>
+                  यो सामान्य हो र यसको अन्य कुनै अर्थभन्दा पनि जिवनको एउटा क्षणको
+                  परावर्तन मात्र हो । तपाइँको भुतपूर्व प्रेमी वा प्रेमिका कुनै समय
+                  तपाइँको जिवनको अंग थियो । यदि तपाइँले कोही नयाँ मानिससँग डेटिङ
+                  गएको वा प्रेमालाप गरेको सपना देख्नुभयो भने ब्युँझिएपछि आफैलाई
+                  सोध्नुहोस् की त्यो मानिसले तपाइँको जिवनमा के अर्थ राख्छ ? उसको
+                  लागि तपाइँको मनमा ठाउँ भएकै हो ?
+                </p>
+              </li>
+              <li class="box">
+                <h5><span>दाँत झरेको सपना देखेमा</span></h5>
+                <p>
+                  यसको अर्थ तपाइँको जिवनमा संक्रमणकाल चलिरहेको छ । तपाइँ यस्तो
+                  निरासा तथा कठिन परिस्थितिबाट गुज्रिँदै हुनुहुन्छ जहाँ प्रसस्तै
+                  परिवर्तन आत्मसात गरिरहनु परेको छ भने तपाइँले दाँत झरेको सपना
+                  देख्न सक्नुहुन्छ । तपाइँ रुपान्तरण हुँदै हुनुहुनछ भन्ने यसको
+                  अर्थ हुन्छ ।
+                </p>
+              </li>
+              <li class="box">
+                <h5><span>मृत्युको बारेमा सपना देखेमा</span></h5>
+                <p>
+                  सपनामा मृत्यु तथा नयाँ जिवनको सुरुवातलाई एकै अर्थमा हेरिने
+                  मनोविज्ञ स्टउट बताउँछन् । मरेको सपना देख्नु भनेको तपाइँले अब
+                  कुनै चिज त्याग्दै हुनुहुन्छ जुन अहिलेसम्म तपाइँको जिवनको भाग
+                  थियो । बसिरहेको घर सर्दा, जागिर छाड्दा तथा सम्बन्ध विच्छेद गर्दा
+                  समेत मरेको सपना देख्ने सम्भावना हुन्छ ।
+                </p>
+              </li>
+              <li class="box">
+                <h5><span>बारम्बार डराउने सपना</span></h5>
+                <p>
+                  मनोविज्ञ स्टउटका अनुसार हामीले जिवनमा धेरै नकारात्मक अनुभवहरु
+                  समेत बटुलेका हुन्छौँ र त्यसलाई आत्मसात गरेका हुन्छौँ जसले हामीमा
+                  संवेगात्मक घाउ सिर्जना गर्दछ । मानिसको मस्तिष्क यस्ता स्मरणहरु
+                  प्रति असहिष्णु हुन्छ र त्यसलाई सँगालेर राखिराख्नु भन्दा बारम्बार
+                  त्यसलाई उत्सर्जन गर्दछ । यो पीडादायी उर्जा डरलाग्दो सपनाका रुपमा
+                  बाहिर निस्किन्छ । कुनै विषयमा डरलाग्दो सपना देखिरहनुको अर्थ
+                  हुन्छ की त्यस विषयमा हाम्रो मस्तिष्कमा डर, चिन्ता तथा पीडा संचित
+                  छ र वास्तविक जिवनमा त्यसलाई सम्बोधन गर्नु आवश्यक छ ।
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-4 col-lg-3 mt-3">
+            <div id="sidebar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    $("#sidebar").load("sidebar.html");
+    var $boxes = $("#parent > .box");
+    var $btns = $(".btn").click(function () {
+      var id = this.id;
+      if (id == "all") {
+        $boxes.fadeIn(450);
+      } else {
+        $boxes
+          .fadeOut(450)
+          .filter(function () {
+            var re = new RegExp("^" + id, "i");
+            return re.test($(this).text().trim());
+          })
+          .stop(true)
+          .fadeIn(450);
+      }
+      $btns.removeClass("activeDream");
+      $(this).addClass("activeDream");
+    });
+  </script>
+</body>
+
+</html>
